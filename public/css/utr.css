@@ -1,0 +1,349 @@
+/* UTR */
+.utr{
+    margin-bottom: 15% !important;
+}
+
+.utr h1{
+    border-bottom: 2px dotted #87ACD2 !important;
+    display: inline !important;
+}
+
+.utr p{
+    margin-top: 10% !important;
+    font-size: 120% !important;
+    font-weight: 500;
+}
+
+.utr-right{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 0px !important;
+}
+
+.utr-left{
+    margin-top: 4% !important;
+}
+/* UTR */
+
+
+
+/* Service We offer */
+.service-we-offer{
+    margin-bottom: 20vh !important;
+}
+
+.service-we-offer-left{}
+
+.service-we-offer-left .list-group{}
+
+.service-we-offer-left .list-group li img{
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+    margin-right: 1rem !important;
+    margin-top: 1.4% !important;
+}
+
+.service-we-offer-left .list-group li{
+    border: none !important;
+    font-size: 1.6rem !important;
+    margin-bottom: 1.2rem !important;
+    color: #000 !important;
+}
+
+.service-we-offer-right{
+    background-size: cover;
+    height: 120vh !important;
+    position: relative;
+}
+
+.service-we-offer-right img{
+    height: 100% !important;
+}
+
+.offer-form{
+    width: 75% !important;
+    position: absolute !important;
+    top: 40vh !important;
+}
+
+.service-we-offer-right label{
+    color: #666 !important;
+}
+
+.service-we-offer-right .form-control{
+    background-color: #fff !important;
+    border-radius: 5rem !important;
+    padding-left: 1.5rem !important;
+    padding-top: .7rem !important;
+    padding-bottom: .7rem !important;
+    border: .1rem solid #555 !important;
+}
+
+.service-we-offer-right label{
+    text-align: left !important;
+}
+
+.service-we-offer-right button{
+    background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+    border: none !important;
+    padding: .4rem !important;
+    padding-left: 2.5rem !important;
+    padding-right: 2.5rem !important;
+    border-radius: 2rem !important;
+    color: #fff !important;
+    font-size: large;
+}
+
+.service-we-offer-right button:focus
+.service-we-offer-right button:active
+{
+    box-shadow: none !important;
+    border: none !important;
+    outline: none !important;
+}
+
+.service-we-offer-right .form-control:active,
+.service-we-offer-right .form-control:focus{
+    box-shadow: none !important;
+}
+/* Service We offer */
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 320px) {
+
+    /* UTR */
+    .utr-right{
+        top: 18vw !important;
+    }
+
+    .utr-right img{
+        width: 70% !important;
+        position: absolute;
+        right: 0 !important;
+    }
+
+    .utr-left{
+        margin-top: 70vw !important;
+    }
+
+    .utr-left h1{
+        font-size: 140% !important;
+    }
+
+    .utr-left p{
+        font-size: 95% !important;
+    }
+    /* UTR */
+
+    /* Service We Offer */
+    .service-we-offer{}
+
+    .service-we-offer-left{}
+
+    .service-we-offer h2{
+        font-size: 140% !important;
+        margin-top: 2rem !important;
+    }
+
+    .service-we-offer-left .list-group li{
+        font-size: 1rem !important;
+        margin-bottom: 0rem !important;
+    }
+
+    .service-we-offer-left .list-group li img{
+        width: 1.2rem !important;
+        height: 1.2rem !important;
+        margin-top: 2% !important;
+    }
+
+    .service-we-offer-right{
+        height: 88vh !important;
+        margin-top: 3rem !important;
+    }
+    
+    .service-we-offer-right img{
+        height: 100% !important;
+    }
+    
+    .offer-form{
+        top: 32vh !important;
+        width: 15rem !important;
+    }
+    
+    .service-we-offer-right .form-control{
+        padding-left: 1.5rem !important;
+        padding-top: .3rem !important;
+        padding-bottom: .3rem !important;
+    }
+    
+    .service-we-offer-right button{
+        padding: .3rem !important;
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+        font-size: medium;
+    }
+
+    .service-we-offer p{
+        font-size: 95% !important;
+    }
+    /* Service We Offer */
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 500px) {
+
+    /* UTR */
+    .utr{
+        margin-bottom: 12% !important;
+    }
+
+    .utr-left h1{
+        font-size: 160% !important;
+    }
+
+    .utr-left p{
+        font-size: 110% !important;
+    }
+    /* UTR */
+
+    /* Service We Offer */
+    .service-we-offer{}
+
+    .service-we-offer-left{}
+
+    .service-we-offer h1{
+        font-size: 180% !important;
+        margin-top: 2.5rem !important;
+    }
+
+    .service-we-offer-left .list-group li{
+        font-size: 1.2rem !important;
+    }
+
+    .service-we-offer p{
+        font-size: 110% !important;
+    }
+    /* Service We Offer */
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    /* UTR */
+    .utr{
+        margin-bottom: 22% !important;
+        margin-top: 0px !important;
+    }
+
+    .utr-right img{
+        width: 80% !important;
+    }
+
+    .utr-left{
+        margin-top: 8vw !important;
+    }
+
+    .utr-left h1{
+        font-size: 180% !important;
+    }
+    .utr-left p{
+        font-size: 110% !important;
+    }
+    /* UTR */
+
+    /* Service We Offer */
+    .service-we-offer h1{
+        margin-bottom: 4rem !important;
+        font-size: 200% !important;
+    }
+
+    .service-we-offer-left .list-group li{
+        font-size: 1.4rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .service-we-offer-left .list-group li img{
+        width: 1.4rem !important;
+        height: 1.4rem !important;
+        margin-top: 1.6% !important;
+    }
+
+    .service-we-offer-right{
+        height: 88vh !important;
+        margin-top: 0rem !important;
+    }
+    
+    .offer-form{
+        width: 15rem !important;
+    }
+    /* Service We Offer */
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    /* UTR */
+    .utr{
+        margin-bottom: 25% !important;
+    }
+
+    .utr-right{
+        top: 0vw !important;
+    }
+
+    .utr-right img{
+        width: 100% !important;
+    }
+
+    .utr-left{
+        margin-top: 7vh !important;
+    }
+
+    .utr-left p{
+        font-size: 120% !important;
+    }
+    /* UTR */
+
+    /* Service We Offer */
+    .service-we-offer-left .list-group li{
+        font-size: 1.5rem !important;
+    }
+
+    .offer-form{
+        top: 30vh !important;
+        width: 15rem !important;
+    }
+
+    .service-we-offer-right .form-control{
+        padding-left: 1.5rem !important;
+        padding-top: .3rem !important;
+        padding-bottom: .3rem !important;
+    }
+    
+    .service-we-offer-right button{
+        padding: .3rem !important;
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+        font-size: medium;
+    }
+
+    .service-we-offer p{
+        font-size: 120% !important;
+    }
+    /* Service We Offer */
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+
+    
+}

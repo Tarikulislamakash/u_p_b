@@ -1,0 +1,211 @@
+/* Contact */
+.contact{
+    margin-bottom: 15% !important;
+}
+
+.contact h1{
+    border-bottom: 2px dotted #87ACD2 !important;
+    display: inline-block !important;
+}
+
+.contact p{
+    margin-top: 10% !important;
+    font-size: 138% !important;
+    font-weight: 500;
+}
+
+.contact-right{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 0px !important;
+}
+
+.contact-left{
+    margin-top: 4% !important;
+}
+/* Contact */
+
+
+/* Visit Office */
+.visit-office{
+    margin-bottom: 10% !important;
+}
+
+.visit-office .main-content{
+    margin-bottom: 4% !important;
+    margin-top: 4% !important;
+}
+
+.visit-office-content{}
+
+.visit-office p{
+    /* font-size: 150% !important; */
+    font-weight: 500;
+}
+/* Visit Office */
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 320px) {
+    
+    /* Contact */
+    .contact-right{
+        top: 18vw !important;
+    }
+
+    .contact-right img{
+        width: 70% !important;
+        position: absolute;
+        right: 0 !important;
+    }
+
+    .contact-left{
+        margin-top: 70vw !important;
+    }
+
+    .contact-left h1{
+        font-size: 150% !important;
+
+    }
+
+    .contact-left p{
+        font-size: 100% !important;
+        margin-bottom: 0 !important;
+    }
+    /* Contact */
+
+    /* Visit Office */
+    .visit-office{
+        margin-top: 18vw !important;
+    }
+
+    .visit-office p{
+        font-size: 120% !important;
+    }
+
+    .visit-office h1{
+        font-size: 150% !important;
+    }
+
+    .visit-office-content p{
+        font-size: 100% !important;
+    }
+    /* Visit Office */
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 500px) {
+
+    /* Contact */
+    .contact{
+        /* margin-bottom: 20% !important; */
+    }
+
+    .contact-right img{
+        width: 53vw !important;
+        height: 55vw !important;
+    }
+
+    .contact-left{
+        margin-top: 4vw !important;
+        width: 45% !important;
+    }
+
+    .contact-left h1{
+        font-size: 165% !important;
+
+    }
+
+    .contact-left p{
+        font-size: 110% !important;
+        margin-bottom: 0 !important;
+    }
+    /* Contact */
+
+    /* Visit Office */
+    .visit-office{
+        margin-top: 28vw !important;
+    }
+
+    .visit-office p{
+        font-size: 120% !important;
+    }
+
+    .visit-office h1{
+        font-size: 170% !important;
+    }
+
+    .visit-office-content p{
+        font-size: 110% !important;
+    }
+    /* Visit Office */
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    /* Contact */
+    .contact-right img{
+        width: 53vw !important;
+        height: 50vw !important;
+    }
+
+    .contact-left{
+        margin-top: 10vw !important;
+    }
+
+    .contact-left h1{
+        font-size: 180% !important;
+
+    }
+
+    .contact-left p{
+        font-size: 120% !important;
+        margin-bottom: 0 !important;
+    }
+    /* Contact */
+
+    /* Visit Office */
+    .visit-office p{
+        font-size: 130% !important;
+    }
+
+    .visit-office h1{
+        font-size: 180% !important;
+    }
+
+    .visit-office{
+        margin-top: 30vw !important;
+    }
+    /* Visit Office */
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    /* Visit Office */
+    .visit-office{
+        margin-top: 15vw !important;
+    }
+    /* Visit Office */
+    .contact-right{
+        top: 0 !important;
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    /* Visit Office */
+    .visit-office{
+        margin-top: 20vw !important;
+    }
+    /* Visit Office */
+    
+}

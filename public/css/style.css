@@ -1,0 +1,411 @@
+/* Header */
+.header {
+    height: 15vw !important;
+    display: flex;
+    align-items: center;
+}
+
+.header .navbar {
+    width: 100% !important;
+}
+
+.navbar-brand {}
+
+.navbar-nav {
+    z-index: 99;
+}
+
+.navbar-nav li a {
+    color: #fff !important;
+}
+
+.bg-light {
+    background-color: #fff !important;
+}
+
+.header {
+    /* z-index: 999; */
+}
+
+.header ul li {
+    margin-left: 3rem !important;
+    transition: 1s all;
+}
+
+.header ul li .dropdown-menu {
+    padding: 0rem !important;
+    padding-top: 2% !important;
+    padding-bottom: 2% !important;
+    margin-top: 2% !important;
+}
+
+.header ul li .dropdown-menu li {
+    margin-left: 0rem !important;
+    /* margin-top: .2rem !important; */
+    transition: 1s all;
+}
+
+.header ul li .dropdown-menu li a {
+    padding: 5% !important;
+    color: #000 !important;
+}
+
+.header ul li a {
+    padding: 0px !important;
+    color: #fff !important;
+}
+
+
+
+/* .header ul .active:after, */
+.header ul li:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 1px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+
+.header ul .active:after,
+.header ul li:hover:after {
+    width: 100%;
+    background: #fff;
+}
+
+/* Header */
+
+
+/* Contact Us */
+
+.contact-us-right {
+    position: absolute;
+    right: 0;
+    padding-right: 0px !important;
+    margin-bottom: 25vh !important;
+}
+
+.contact-us .nav {}
+
+.contact-us .nav li {
+    border: 2px solid #0d6efd !important;
+    border-radius: 50% !important;
+    width: 4rem !important;
+    height: 4rem !important;
+    padding-top: .4rem !important;
+    margin-right: 1.5rem !important;
+}
+
+.contact-us .nav li a {}
+
+.contact-us .nav li a i {
+    /* border: 2px solid #0d6efd !important; */
+    /* padding: .5rem !important; */
+    /* border-radius: 50% !important; */
+    /* width: 4rem !important; */
+    /* height: 4rem !important; */
+    /* margin: auto !important; */
+}
+
+/* .contact-us-right{
+    position: absolute;
+    right: 0;
+    padding-right: 0 !important;
+}
+
+.contact-us-right img{
+    height: 50vh !important;
+} */
+/* Contact Us */
+
+
+/* Footer */
+.footer {
+    background-color: #EAEDF6 !important;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+}
+
+.footer img {
+    width: 30% !important;
+}
+
+.footer .row .col-md-6 p {
+    margin-bottom: 1rem !important;
+}
+
+.footer .nav {}
+
+.footer .nav li {
+    /* border-right: 1.2rme !important; */
+}
+
+.footer .nav li a {
+    color: #333 !important;
+    padding: 0px !important;
+    border-right: 2px solid #333 !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+.footer .nav li a:last-child {
+    border-right: 0px !important;
+}
+
+/* Footer */
+
+
+
+/* Extra small devices (phones, 320px and down) */
+@media only screen and (min-width: 320px) {
+
+    .navbar-brand img {
+        width: 50% !important;
+    }
+
+    .footer-right {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center !important;
+        margin-top: 5% !important;
+    }
+
+    .footer-left p {
+        text-align: center !important;
+    }
+
+    .footer {
+        font-size: 75% !important;
+    }
+
+    .footer .nav li a {
+        padding-left: .4rem !important;
+        padding-right: .4rem !important;
+    }
+
+    /* Contact Us */
+    .contact-us {
+        margin-top: 20% !important;
+        margin-bottom: 10% !important;
+    }
+
+    .contact-us-left {
+        margin-top: 90% !important;
+        display: flex;
+        justify-content: center !important;
+    }
+
+    .contact-us-left ul {
+        display: flex;
+        justify-content: space-between !important;
+    }
+
+    .contact-us .nav li {
+        width: 3rem !important;
+        height: 3rem !important;
+        padding-top: .1rem !important;
+        margin-right: 1rem !important;
+    }
+
+    .contact-us .nav li:last-child {
+        margin-right: 0rem !important;
+    }
+
+    .contact-us .nav li i {
+        font-size: 150% !important;
+    }
+
+    /* Contact Us */
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 500px) {
+    .navbar-brand img {
+        width: 50% !important;
+    }
+
+    /* Contact Us */
+    .contact-us {
+        margin-top: 10% !important;
+        margin-bottom: 10% !important;
+    }
+
+    .contact-us-right img {
+        width: 80% !important;
+        position: absolute;
+        right: 0 !important;
+    }
+
+    .contact-us-left {
+        margin-top: 75vw !important;
+        display: flex;
+        justify-content: center !important;
+    }
+
+    .contact-us-left ul {
+        display: flex;
+        justify-content: space-between !important;
+    }
+
+    .contact-us .nav li {
+        width: 3rem !important;
+        height: 3rem !important;
+        padding-top: .1rem !important;
+        margin-right: 1rem !important;
+    }
+
+    .contact-us .nav li:last-child {
+        margin-right: 0rem !important;
+    }
+
+    .contact-us .nav li i {
+        font-size: 150% !important;
+    }
+
+    /* Contact Us */
+
+    .footer {
+        /* margin-top: 30% !important; */
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    .header {
+        height: 12vw !important;
+    }
+
+    .navbar-brand img {
+        width: 70% !important;
+    }
+
+    .contact-us-right img {
+        width: 100% !important;
+    }
+
+    .footer-right {
+        justify-content: end !important;
+        margin-top: 0% !important;
+    }
+
+    .footer .nav li a {
+        padding-left: .5rem !important;
+        padding-right: .5rem !important;
+    }
+
+    .footer-left p {
+        text-align: left !important;
+    }
+
+    .footer {
+        font-size: 85% !important;
+    }
+
+    .contact-us {
+        margin-top: 10% !important;
+        margin-bottom: 25% !important;
+    }
+
+    .contact-us-left {
+        margin-top: 20% !important;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    .navbar-brand img {
+        width: 90% !important;
+    }
+
+    .header ul li {
+        margin-left: 2rem !important;
+    }
+
+    .contact-us {
+        margin-top: 10% !important;
+    }
+
+    .contact-us-left {
+        /* margin-top: 20% !important; */
+    }
+
+    .contact-us .nav li {
+        border: 2px solid #0d6efd !important;
+        border-radius: 50% !important;
+        width: 4rem !important;
+        height: 4rem !important;
+        padding-top: .4rem !important;
+        margin-right: 1.5rem !important;
+    }
+
+    .contact-us .nav li i {
+        font-size: 200% !important;
+    }
+
+    .footer {
+        padding-top: 1.2rem !important;
+        padding-bottom: 1.2rem !important;
+    }
+
+    .footer .nav li a {
+        padding-left: .8rem !important;
+        padding-right: .8rem !important;
+    }
+
+    .footer {
+        font-size: 100% !important;
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    .header ul li {
+        margin-left: 3rem !important;
+    }
+
+    .footer {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+
+    .footer img {
+        width: 25% !important;
+    }
+}
+
+
+
+
+
+/* Extra large devices (large laptops and desktops, 1500px and up) */
+@media only screen and (min-width: 1500px) {
+
+    .header ul li .dropdown-menu li a {
+        padding: 8% !important;
+    }
+
+    .header ul li {
+        margin-left: 5rem !important;
+    }
+}
+
+
+
+
+
+/* Extra large devices (large laptops and desktops, 1800px and up) */
+@media only screen and (min-width: 1800px) {
+
+    /* .header ul li .dropdown-menu li a{
+        padding: 8% !important;
+    }
+
+    .header ul li{
+        margin-left: 5rem !important;
+    } */
+}

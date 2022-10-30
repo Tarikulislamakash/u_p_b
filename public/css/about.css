@@ -1,0 +1,255 @@
+/* Our Journey */
+.our-journey{
+    margin-top: 3% !important;
+    margin-bottom: 10% !important;
+}
+
+.our-journey .row{
+}
+
+.our-journey h2{
+    display: inline-block;
+    border-bottom: 2px dotted #87ACD2 !important;
+    margin-bottom: 5% !important;
+}
+
+.our-journey-left p{
+    font-size: 1.1rem !important;
+}
+
+.our-journey-left button{
+    background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+    border: none !important;
+    padding: .5rem !important;
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+    border-radius: 2rem !important;
+    color: #fff !important;
+    text-transform: uppercase;
+    font-size: 120%;
+}
+
+.our-journey-right{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 0px !important;
+}
+/* Our Journey */
+
+
+/* leadership */
+
+.established-leadership{
+    margin-bottom: 8% !important;
+}
+
+.established-leadership p{
+    font-size: 120% !important;
+}
+
+.established-leadership h1{
+    margin-top: 1.4rem !important;
+    margin-bottom: 1.4rem !important;
+}
+
+.leadership{
+    /* margin-top: 6% !important; */
+}
+
+.leadership .col-md-4 div{
+    border-radius: 5% !important;
+}
+
+.leadership .col-md-4{
+    transition: 1s all;
+}
+
+.leadership .col-md-4:hover{
+    transition: 1s all;
+    transform: scale(1.06);
+}
+
+.swiper-wrapper{
+    padding-top: 5% !important;
+}
+
+/* .service .swiper-slide{
+    transition: 1s all;
+    padding-top: 6% !important;
+} */
+/* leadership */
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 320px) {
+
+    /* Our Journey */
+    .our-journey-right{
+        top: 18vw !important;
+    }
+
+    .our-journey-right img{
+        width: 70% !important;
+        position: absolute;
+        right: 0 !important;
+    }
+
+    .our-journey-left{
+        margin-top: 70vw !important;
+    }
+
+    .our-journey-left h2{
+        font-size: 135% !important;
+    }
+    .our-journey-left p{
+        font-size: 100% !important;
+        margin-bottom: 0 !important;
+    }
+
+    .our-journey-left h4{
+        font-size: 120% !important;
+        margin-top: 2vw !important;
+    }
+    .our-journey-left button{
+        font-size: 120% !important;
+        margin-top: 2vw !important;
+        margin-bottom: 5% !important;
+    }
+    /* Our Journey */
+
+
+
+    /* leadership */
+    .established-leadership p{
+        font-size: 100% !important;
+    }
+    
+    .established-leadership h1{
+        font-size: 150% !important;
+    }
+    /* leadership */
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 500px) {
+
+    /* Our Journey */
+    .our-journey-right img{
+        width: 55vw !important;
+        height: 55vw !important;
+    }
+
+    .our-journey-left{
+        margin-top: 2vw !important;
+        width: 55% !important;
+    }
+
+    .our-journey-left h4:first-of-type{
+        width: 75% !important;
+    }
+
+    .our-journey-left button{
+        font-size: 100% !important;
+    }
+    /* Our Journey */
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    /* Our Journey */
+    .our-journey-right img{
+        width: 80% !important;
+        height: 50vw !important;
+    }
+
+    .our-journey-left{
+        margin-top: 5vw !important;
+    }
+
+    .our-journey-left h2{
+        font-size: 175% !important;
+    }
+    .our-journey-left p{
+        font-size: 105% !important;
+        margin-bottom: 0 !important;
+    }
+
+    .our-journey-left h3{
+        font-size: 120% !important;
+    }
+    .our-journey-left button{
+        font-size: 120% !important;
+    }
+    /* Our Journey */
+
+
+
+    /* leadership */
+    .established-leadership p{
+        font-size: 105% !important;
+    }
+    
+    .established-leadership h1{
+        font-size: 180% !important;
+    }
+    /* leadership */
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+    /* Our Journey */
+    .our-journey{
+        margin-bottom: 6% !important;
+    }
+
+    .our-journey h2{
+        font-size: 200% !important;
+    }
+
+    .our-journey-left{
+        margin-top: 0 !important;
+    }
+
+    .our-journey-left h4{
+        font-size: 140% !important;
+    }
+
+    .our-journey-left p{
+        font-size: 120% !important;
+    }
+
+    .our-journey-right{
+        top: 0vw !important;
+    }
+
+    .our-journey-right img{
+        width: 95% !important;
+    }
+    /* Our Journey */
+
+
+    /* leadership */
+
+    .established-leadership p{
+        font-size: 120% !important;
+    }
+
+    .established-leadership h1{
+        font-size: 200% !important;
+    }
+    /* leadership */
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+}

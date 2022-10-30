@@ -1,0 +1,94 @@
+/* Header */
+.navbar-nav li a{
+    color: #333 !important;
+}
+
+.bg-light{
+    background-color: #fff !important;
+}
+
+.header ul li{
+    margin-left: 2.5rem !important;
+    transition: 1s all;
+}
+
+.header ul li .dropdown-menu li a{
+    padding: 5% !important;
+    color: #000 !important;
+}
+
+.header ul li a{
+    padding: 0px !important;
+    color: #333 !important;
+}
+
+.header ul .active:after,
+.header ul li:hover:after {
+	width: 100%;
+	background: #333;
+}
+/* Header */
+
+/* content */
+.content{
+    margin-bottom: 10% !important;
+    padding-top: 3% !important;
+    border-top: 3px solid #84A2CF !important;
+}
+.content h1{}
+
+.content h3{}
+/* content */
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 320px) {
+
+    .content h1{
+        font-size: 160% !important;
+    }
+
+    .content h3{
+        font-size: 130% !important;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 500px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    .content h1{
+        font-size: 180% !important;
+    }
+
+    .content h3{
+        font-size: 150% !important;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    .content h1{
+        font-size: 200% !important;
+    }
+
+    .content h3{
+        font-size: 165% !important;
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    
+    
+}

@@ -1,0 +1,257 @@
+/* Account */
+.account{
+    margin-bottom: 20% !important;
+}
+
+.account-form{
+    background-color: #DDE1F1 !important;
+    margin-top: 10% !important;
+    padding: 8% !important;
+    border-radius: 5% !important;
+}
+
+.account-form h2{
+    margin-bottom: 6% !important;
+}
+
+.account-form label{
+    color: #666 !important;
+    font-size: 110% !important;
+}
+
+.account-form .form-control{
+    background-color: #fff !important;
+    border-radius: 5rem !important;
+    padding-left: 1.5rem !important;
+    padding-top: .7rem !important;
+    padding-bottom: .7rem !important;
+    border: .1rem solid #555 !important;
+}
+
+.account-form label{
+    text-align: left !important;
+}
+
+.account-form button{
+    background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+    border: none !important;
+    padding: .4rem !important;
+    padding-left: 2.5rem !important;
+    padding-right: 2.5rem !important;
+    border-radius: 2rem !important;
+    color: #fff !important;
+    font-size: large;
+    margin-bottom: 5% !important;
+}
+
+.account-form button:focus
+.account-form button:active
+{
+    box-shadow: none !important;
+    border: none !important;
+    outline: none !important;
+}
+
+.account-form .form-control:active,
+.account-form .form-control:focus{
+    box-shadow: none !important;
+}
+
+.account h1{
+    border-bottom: 2px dotted #87ACD2 !important;
+    display: inline-block !important;
+}
+
+.account p{
+
+}
+
+.account-right{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 0px !important;
+}
+
+.account-left{
+    margin-top: 4% !important;
+}
+/* Account */
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 320px) {
+
+    /* Account */
+    .account-right{
+        top: 18vw !important;
+    }
+
+    .account{
+        border-top: 3px solid #84A2CF !important;
+    }
+
+    .account .row{
+        display: flex;
+        justify-content: center !important;
+    }
+
+    .account-left{
+        width: 95% !important;
+        margin-top: 5vw !important;
+    }
+
+    .account-left h1{
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .account-right{
+        display: none !important;
+    }
+
+    .account-right img{
+        width: 70% !important;
+        position: absolute;
+        right: 0 !important;
+    }
+
+    .account-left h1{
+        font-size: 140% !important;
+    }
+
+    .account-left .form-control{
+        padding-left: 1.5rem !important;
+        padding-top: .3rem !important;
+        padding-bottom: .3rem !important;
+    }
+    
+    .account-left button{
+        padding: .3rem !important;
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+        font-size: medium;
+    }
+    /* Account */
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 500px) {
+
+    /* Account */
+    .account{
+        margin-bottom: 12% !important;
+    }
+
+    .account-left{
+        width: 80% !important;
+    }
+
+    .account-left h1{
+        font-size: 160% !important;
+    }
+
+    .account-left button{
+        padding: .4rem !important;
+        padding-left: 2.5rem !important;
+        padding-right: 2.5rem !important;
+        font-size: large;
+    }
+    /* Account */
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    /* Account */
+    .account{
+        margin-bottom: 15% !important;
+        margin-top: 0px !important;
+    }
+
+    .account-left{
+        margin-top: 5vw !important;
+        width: 60% !important;
+    }
+
+    .account-left h1{
+        font-size: 180% !important;
+    }
+    
+    .account-left button{
+        padding: .4rem !important;
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;
+        font-size: large;
+    }
+    /* Account */
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    /* Account */
+    .account{
+        margin-bottom: 15% !important;
+        border-top: none !important;
+    }
+
+    .account-right{
+        display: inline-block !important;
+        top: 0vw !important;
+    }
+
+    .account .row{
+        justify-content: space-between !important;
+    }
+
+    .account-left{
+        text-align: left !important;
+    }
+
+    .account-left h1{
+        font-size: 200% !important;
+        margin-left: 0;
+        transform: translateX(-0%);
+    }
+
+    .account-left h1{
+    }
+
+    .account-right img{
+        width: 100% !important;
+        height: 90vh !important;
+    }
+
+    .account-left{
+        margin-top: 2% !important;
+        width: 50% !important;
+    }
+
+
+    .service-we-offer-right .form-control{
+        padding-left: 1.5rem !important;
+        padding-top: .3rem !important;
+        padding-bottom: .3rem !important;
+    }
+    
+    .service-we-offer-right button{
+        padding: .3rem !important;
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+        font-size: medium;
+    }
+    /* Account */
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+
+    
+}
