@@ -83,14 +83,14 @@
 							<p class="text-center">CEO & Founder</p>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 swiper-slide">
 						<div class="single-leadership py-4 px-4 d-flex flex-column align-items-center border border-primary rounded">
 							<img src="asset/Group 21987.png" alt="" class="img-fluid mb-4" />
 							<h5 class="text-center">Agata Venie</h5>
 							<p class="text-center">VP Accounting</p>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 swiper-slide">
 						<div class="single-leadership py-4 px-4 d-flex flex-column align-items-center border border-primary rounded">
 							<img src="asset/Group 21988.png" alt="" class="img-fluid mb-4" />
 							<h5 class="text-center">Sonia Brooklyn</h5>
@@ -98,7 +98,7 @@
 						</div>
 					</div>
 				</div>
-				<!-- <div class="swiper-pagination"></div> -->
+				<div class="swiper-pagination"></div>
 			</div>
 		</div>
 	</div>
@@ -183,7 +183,7 @@
 				slidesPerView: 3,
 			},
 			1200: {
-				slidesPerView: 4,
+				slidesPerView: 3,
 			},
 		},
 	});
