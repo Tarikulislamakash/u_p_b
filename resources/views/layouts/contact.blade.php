@@ -19,6 +19,16 @@
 	<div class="container">
 		<div class="row d-flex">
 			<div class="col-md-5 contact-left">
+
+				<!-- Appointment Session Message -->
+				@if(Session::has('appointment_success'))
+				<p class="alert alert-info" style="font-size: 100% !important; margin-bottom: 1rem !important;">{{ Session::get('appointment_success') }}</p>
+				@endif
+				@if(Session::has('appointment_error'))
+				<p class="alert alert-danger" style="font-size: 100% !important; margin-bottom: 1rem !important;">{{ Session::get('appointment_error') }}</p>
+				@endif
+				<!-- Appointment Session Message -->
+
 				<h1 class="pb-2">Contact Us</h1>
 				<p>
 					Thank you for your interest in our services. If you
@@ -68,6 +78,7 @@
 <div class="book-appointment">
 	<div class="container">
 		<div class="row">
+
 			<div class="col-md-6 appointment-left">
 				<img class="img-fluid" src="asset/Group 21923@2x.png" alt="" />
 			</div>
@@ -79,22 +90,23 @@
 					and fuel benefit and more with our handy calculators
 				</p>
 
-				<form>
+				<form method="POST" action="{{ route('appointment') }}">
+					@csrf
 					<div class="mb-3">
 						<label for="name" class="form-label">Name</label>
-						<input type="text" class="form-control" id="name" aria-describedby="nameHelp" />
+						<input type="text" class="form-control" name="name" id="name" aria-describedby="nameHelp" value="{{ old('name') }}" required />
 					</div>
 					<div class="mb-3">
 						<label for="email" class="form-label">Email</label>
-						<input type="email" class="form-control" id="email" aria-describedby="emailHelp" />
+						<input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" value="{{ old('email') }}" required />
 					</div>
 					<div class="mb-3">
 						<label for="number" class="form-label">Number</label>
-						<input type="text" class="form-control" id="number" aria-describedby="numberHelp" />
+						<input type="text" class="form-control" name="number" id="number" aria-describedby="numberHelp" value="{{ old('number') }}" required />
 					</div>
 					<div class="mb-3">
 						<label for="message" class="form-label">Message</label>
-						<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+						<textarea class="form-control" name="message" id="message" rows="3" value="{{ old('message') }}" required></textarea>
 					</div>
 					<div class="d-flex justify-content-center">
 						<button type="submit" class="btn btn-primary fw-bold">

@@ -100,9 +100,9 @@ class ProjectController extends Controller
             );
 
             $mail->send();
-            return redirect()->back()->with('appointment_message', 'Appointment Request Successfully Send.');
+            return redirect()->back()->with('appointment_success', 'Appointment Request Successfully Send.');
         } catch (Exception $e) {
-            echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+            return redirect()->back()->with('appointment_error', 'Appointment Request Failed.');
         }
     }
 }

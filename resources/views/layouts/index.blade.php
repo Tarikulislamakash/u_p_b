@@ -18,7 +18,18 @@
 <div class="who-are-we">
     <div class="container">
         <div class="row align-items-end">
+
             <div class="col-md-5 whoAreWe-left">
+
+                <!-- Appointment Session Message -->
+                @if(Session::has('appointment_success'))
+                <p class="alert alert-info" style="font-size: 100% !important; margin-bottom: 1rem !important;">{{ Session::get('appointment_success') }}</p>
+                @endif
+                @if(Session::has('appointment_error'))
+                <p class="alert alert-danger" style="font-size: 100% !important; margin-bottom: 1rem !important;">{{ Session::get('appointment_error') }}</p>
+                @endif
+                <!-- Appointment Session Message -->
+
                 <h1>who are we?</h1>
                 <p>Cheap and best accounting services in uk</p>
                 <p>Outsource your books at a cheaper cost with</p>
@@ -130,11 +141,6 @@
 <div class="book-appointment">
     <div class="container">
         <div class="row">
-
-            @if(Session::has('appointment_message'))
-            <p class="alert alert-info">{{ Session::get('appointment_message') }}</p>
-            @endif
-
 
             <div class="col-md-6 appointment-left">
                 <img class="img-fluid" src="asset/Group 21923@2x.png" alt="" />
