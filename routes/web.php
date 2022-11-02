@@ -35,5 +35,6 @@ Route::get('/self', [ProjectController::class, 'self'])->name('self');
 Route::get('/thank-you', [ProjectController::class, 'thank_you'])->name('thank-you');
 Route::get('/utr', [ProjectController::class, 'utr'])->name('utr');
 Route::get('/vat-filing', [ProjectController::class, 'vat_filing'])->name('vat-filing');
+Route::post('/appointment', [ProjectController::class, 'appointment'])->name('appointment');
 
 require __DIR__ . '/auth.php';

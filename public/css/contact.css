@@ -1,99 +1,184 @@
 /* Contact */
-.contact{
+.contact {
     margin-bottom: 15% !important;
 }
 
-.contact h1{
+.contact h1 {
     border-bottom: 2px dotted #87ACD2 !important;
     display: inline-block !important;
 }
 
-.contact p{
+.contact p {
     margin-top: 10% !important;
     font-size: 138% !important;
     font-weight: 500;
 }
 
-.contact-right{
+.contact-right {
     position: absolute;
     top: 0;
     right: 0;
     padding-right: 0px !important;
 }
 
-.contact-left{
+.contact-left {
     margin-top: 4% !important;
 }
+
 /* Contact */
 
 
 /* Visit Office */
-.visit-office{
+.visit-office {
     margin-bottom: 10% !important;
 }
 
-.visit-office .main-content{
+.visit-office .main-content {
     margin-bottom: 4% !important;
     margin-top: 4% !important;
 }
 
-.visit-office-content{}
+.visit-office-content {}
 
-.visit-office p{
+.visit-office p {
     /* font-size: 150% !important; */
     font-weight: 500;
 }
+
 /* Visit Office */
+
+/* Book Appointment */
+.book-appointment {}
+
+.book-appointment .appointment-left {
+    position: absolute;
+    left: -3.5rem !important;
+    padding-left: 0 !important;
+}
+
+.book-appointment .appointment-right {}
+
+.book-appointment .appointment-right h6,
+.book-appointment .appointment-right p,
+.book-appointment .appointment-right label {
+    color: #666 !important;
+}
+
+.book-appointment .appointment-right .form-control {
+    background-color: #E5E8F4 !important;
+    border-radius: .5rem !important;
+    padding-left: 1.5rem !important;
+    padding-top: .5rem !important;
+    padding-bottom: .5rem !important;
+    border: .1rem solid #555 !important;
+}
+
+.book-appointment .appointment-right label {
+    text-align: left !important;
+}
+
+.book-appointment .appointment-right button {
+    background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+    border: none !important;
+    padding: 1rem !important;
+    padding-left: 2.5rem !important;
+    padding-right: 2.5rem !important;
+    border-radius: 2rem !important;
+    color: #fff !important;
+    font-size: large;
+    margin-top: 1rem !important;
+}
+
+.book-appointment .appointment-right button:focus .book-appointment .appointment-right button:active {
+    box-shadow: none !important;
+    border: none !important;
+    outline: none !important;
+}
+
+.book-appointment .appointment-right .form-control:active,
+.book-appointment .appointment-right .form-control:focus {
+    /* outline: none !important;
+    border: 0px !important; */
+    box-shadow: none !important;
+}
+
+.book-appointment .appointment-right {}
+
+.book-appointment {}
+
+.book-appointment {}
+
+/* Book Appointment */
 
 
 
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (min-width: 320px) {
-    
+
     /* Contact */
-    .contact-right{
+    .contact-right {
         top: 18vw !important;
     }
 
-    .contact-right img{
+    .contact-right img {
         width: 70% !important;
         position: absolute;
         right: 0 !important;
     }
 
-    .contact-left{
+    .contact-left {
         margin-top: 70vw !important;
     }
 
-    .contact-left h1{
+    .contact-left h1 {
         font-size: 150% !important;
 
     }
 
-    .contact-left p{
+    .contact-left p {
         font-size: 100% !important;
         margin-bottom: 0 !important;
     }
+
     /* Contact */
 
     /* Visit Office */
-    .visit-office{
+    .visit-office {
         margin-top: 18vw !important;
     }
 
-    .visit-office p{
+    .visit-office p {
         font-size: 120% !important;
     }
 
-    .visit-office h1{
+    .visit-office h1 {
         font-size: 150% !important;
     }
 
-    .visit-office-content p{
+    .visit-office-content p {
         font-size: 100% !important;
     }
+
     /* Visit Office */
+
+    /* Book Appointment */
+    .book-appointment {
+        margin-top: 4vw !important;
+    }
+
+    .book-appointment .appointment-right {
+        margin-top: 90vw !important;
+    }
+
+    .book-appointment .appointment-right button {
+        padding: .5rem !important;
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+        font-size: small;
+    }
+
+    /* Book Appointment */
 
 }
 
@@ -101,48 +186,55 @@
 @media only screen and (min-width: 500px) {
 
     /* Contact */
-    .contact{
+    .contact {
         /* margin-bottom: 20% !important; */
     }
 
-    .contact-right img{
+    .contact-right img {
         width: 53vw !important;
         height: 55vw !important;
     }
 
-    .contact-left{
+    .contact-left {
         margin-top: 4vw !important;
         width: 45% !important;
     }
 
-    .contact-left h1{
+    .contact-left h1 {
         font-size: 165% !important;
 
     }
 
-    .contact-left p{
+    .contact-left p {
         font-size: 110% !important;
         margin-bottom: 0 !important;
     }
+
     /* Contact */
 
     /* Visit Office */
-    .visit-office{
+    .visit-office {
         margin-top: 28vw !important;
     }
 
-    .visit-office p{
+    .visit-office p {
         font-size: 120% !important;
     }
 
-    .visit-office h1{
+    .visit-office h1 {
         font-size: 170% !important;
     }
 
-    .visit-office-content p{
+    .visit-office-content p {
         font-size: 110% !important;
     }
+
     /* Visit Office */
+
+    .appointment-right {
+        padding-left: 8vw !important;
+        padding-right: 8vw !important;
+    }
 
 }
 
@@ -150,51 +242,72 @@
 @media only screen and (min-width: 768px) {
 
     /* Contact */
-    .contact-right img{
+    .contact-right img {
         width: 53vw !important;
         height: 50vw !important;
     }
 
-    .contact-left{
+    .contact-left {
         margin-top: 10vw !important;
     }
 
-    .contact-left h1{
+    .contact-left h1 {
         font-size: 180% !important;
 
     }
 
-    .contact-left p{
+    .contact-left p {
         font-size: 120% !important;
         margin-bottom: 0 !important;
     }
+
     /* Contact */
 
     /* Visit Office */
-    .visit-office p{
+    .visit-office p {
         font-size: 130% !important;
     }
 
-    .visit-office h1{
+    .visit-office h1 {
         font-size: 180% !important;
     }
 
-    .visit-office{
+    .visit-office {
         margin-top: 30vw !important;
     }
+
     /* Visit Office */
+
+    .book-appointment .appointment-right {
+        padding-left: 2vw !important;
+        padding-right: 2vw !important;
+        margin-top: 0 !important;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 
     /* Visit Office */
-    .visit-office{
+    .visit-office {
         margin-top: 15vw !important;
     }
+
     /* Visit Office */
-    .contact-right{
+    .contact-right {
         top: 0 !important;
+    }
+
+    .book-appointment .appointment-right .form-control {
+        padding-top: .3rem !important;
+        padding-bottom: .3rem !important;
+    }
+
+    .book-appointment .appointment-right button {
+        padding: .5rem !important;
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+        font-size: medium;
     }
 
 }
@@ -203,9 +316,22 @@
 @media only screen and (min-width: 1200px) {
 
     /* Visit Office */
-    .visit-office{
+    .visit-office {
         margin-top: 20vw !important;
     }
+
     /* Visit Office */
-    
+
+    .book-appointment .appointment-right .form-control {
+        padding-top: .5rem !important;
+        padding-bottom: .5rem !important;
+    }
+
+    .book-appointment .appointment-right button {
+        padding: 1rem !important;
+        padding-left: 2.5rem !important;
+        padding-right: 2.5rem !important;
+        font-size: large;
+    }
+
 }

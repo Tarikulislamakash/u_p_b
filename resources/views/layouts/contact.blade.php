@@ -64,6 +64,50 @@
 </div>
 <!-- Visit Our Office -->
 
+<!-- Book Appointment -->
+<div class="book-appointment">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 appointment-left">
+				<img class="img-fluid" src="asset/Group 21923@2x.png" alt="" />
+			</div>
+			<div class="col-md-6 appointment-right ms-auto">
+				<h6 class="text-center">GET FREE CONSULTATION</h6>
+				<h2 class="text-center">Book Appointment</h2>
+				<p class="text-center">
+					Find out your funding requirements, VAT, profit, company car
+					and fuel benefit and more with our handy calculators
+				</p>
+
+				<form>
+					<div class="mb-3">
+						<label for="name" class="form-label">Name</label>
+						<input type="text" class="form-control" id="name" aria-describedby="nameHelp" />
+					</div>
+					<div class="mb-3">
+						<label for="email" class="form-label">Email</label>
+						<input type="email" class="form-control" id="email" aria-describedby="emailHelp" />
+					</div>
+					<div class="mb-3">
+						<label for="number" class="form-label">Number</label>
+						<input type="text" class="form-control" id="number" aria-describedby="numberHelp" />
+					</div>
+					<div class="mb-3">
+						<label for="message" class="form-label">Message</label>
+						<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+					</div>
+					<div class="d-flex justify-content-center">
+						<button type="submit" class="btn btn-primary fw-bold">
+							BOOK APPOINTMENT
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Book Appointment -->
+
 <!-- Contact Us -->
 <div class="contact-us">
 	<div class="container">
