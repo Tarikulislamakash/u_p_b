@@ -10,6 +10,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules;
+use Spatie\Newsletter\NewsletterFacade as Newsletter;
+
 
 class RegisteredUserController extends Controller
 {
@@ -48,6 +50,13 @@ class RegisteredUserController extends Controller
         event(new Registered($user));
 
         Auth::login($user);
+
+        // Mailchimp Api Intigration
+        if (!Newsletter::isSubscribed(auth()->user()->email))
+        {
+            Newsletter::subscribe(auth()->user()->email);
+        }
+        // Mailchimp Api Intigration
 
         return redirect(RouteServiceProvider::HOME);
     }
