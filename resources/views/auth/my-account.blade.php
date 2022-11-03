@@ -21,7 +21,6 @@
 			<div class="col-md-6 account-left">
 				<h1 class="pb-2">My Account</h1>
 				<div class="account-form">
-					<!-- <form action=""> -->
 					<h2 class="text-center">Login</h2>
 					<form method="POST" action="{{ route('login') }}">
 						@csrf
@@ -48,7 +47,6 @@
 							<a href="{{ route('register') }}">Register now</a>
 						</div>
 					</form>
-					<!-- </form> -->
 				</div>
 			</div>
 			<div class="col-md-6 account-right">
