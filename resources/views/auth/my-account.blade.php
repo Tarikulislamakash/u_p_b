@@ -44,8 +44,8 @@
 							</button>
 						</div>
 						<div class="d-flex justify-content-between">
-							<p>Forget password ?</p>
-							<p>Register now</p>
+							<a href="{{ route('register') }}">Forget password ?</a>
+							<a href="{{ route('register') }}">Register now</a>
 						</div>
 					</form>
 					<!-- </form> -->

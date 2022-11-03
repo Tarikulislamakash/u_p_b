@@ -151,17 +151,17 @@
 				<div class="col-md-6 d-flex justify-content-end footer-right">
 					<ul class="nav">
 						<li class="nav-item">
-							<a class="nav-link" aria-current="page" href="#">
+							<a class="nav-link" aria-current="page" href="{{ route('terms') }}">
 								Terms
 							</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" aria-current="page" href="#">
+							<a class="nav-link" aria-current="page" href="{{ route('privacy-statement') }}">
 								Privacy Statement
 							</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" aria-current="page" href="#">
+							<a class="nav-link" aria-current="page" href="{{ route('communication-policy') }}">
 								Communication Policy
 							</a>
 						</li>

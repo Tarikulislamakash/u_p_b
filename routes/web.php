@@ -37,4 +37,8 @@ Route::get('/utr', [ProjectController::class, 'utr'])->name('utr');
 Route::get('/vat-filing', [ProjectController::class, 'vat_filing'])->name('vat-filing');
 Route::post('/appointment', [ProjectController::class, 'appointment'])->name('appointment');
 
+Route::get('/terms', [ProjectController::class, 'terms'])->name('terms');
+Route::get('/privacy-statement', [ProjectController::class, 'privacyStatement'])->name('privacy-statement');
+Route::get('/communication-policy', [ProjectController::class, 'communicationPolicy'])->name('communication-policy');
+
 require __DIR__ . '/auth.php';

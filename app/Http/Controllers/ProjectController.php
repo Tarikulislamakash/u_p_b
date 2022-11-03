@@ -72,7 +72,6 @@ class ProjectController extends Controller
 
     public function appointment(Request $request)
     {
-        // dd($request->all());
         $mail = new PHPMailer(true);
 
         try {
@@ -105,4 +104,23 @@ class ProjectController extends Controller
             return redirect()->back()->with('appointment_error', 'Appointment Request Failed.');
         }
     }
+
+
+    public function terms()
+    {
+        return view('layouts.terms');
+    }
+
+
+    public function privacyStatement()
+    {
+        return view('layouts.privacy-statement');
+    }
+
+
+    public function communicationPolicy()
+    {
+        return view('layouts.communication-policy');
+    }
+
 }
