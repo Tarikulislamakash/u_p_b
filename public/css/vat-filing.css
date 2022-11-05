@@ -185,22 +185,22 @@
         height: 88vh !important;
         margin-top: 3rem !important;
     }
-    
+
     .service-we-offer-right img{
         height: 100% !important;
     }
-    
+
     .offer-form{
         top: 32vh !important;
         width: 15rem !important;
     }
-    
+
     .service-we-offer-right .form-control{
         padding-left: 1.5rem !important;
         padding-top: .3rem !important;
         padding-bottom: .3rem !important;
     }
-    
+
     .service-we-offer-right button{
         padding: .3rem !important;
         padding-left: 2rem !important;
@@ -295,7 +295,7 @@
         height: 88vh !important;
         margin-top: 0rem !important;
     }
-    
+
     .offer-form{
         width: 15rem !important;
     }
@@ -308,7 +308,7 @@
 
     /* CIS Return */
     .vat-filing{
-        margin-bottom: 15% !important;
+        margin-bottom: 25vw !important;
     }
 
     .vat-filing-right{
@@ -343,7 +343,7 @@
         padding-top: .3rem !important;
         padding-bottom: .3rem !important;
     }
-    
+
     .service-we-offer-right button{
         padding: .3rem !important;
         padding-left: 2rem !important;
@@ -354,9 +354,41 @@
 
 }
 
+
+
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 
+    .service-we-offer{
+        margin-top: 30vw !important;
+    }
 
-    
+}
+
+
+
+/* Extra large devices (large laptops and desktops, 1500px and up) */
+@media only screen and (min-width: 1500px) {
+
+    .contact-us{
+        /* margin-top: 8vw !important; */
+    }
+
+    .service-we-offer{
+        margin-top: 34vw !important;
+    }
+
+}
+
+
+
+
+
+/* Extra large devices (large laptops and desktops, 1800px and up) */
+@media only screen and (min-width: 1800px) {
+
+    .contact-us{
+        margin-top: 0vw !important;
+    }
+
 }

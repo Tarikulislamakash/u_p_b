@@ -28,35 +28,38 @@ body{
 }
 
 .header {
-    /* z-index: 999; */
 }
 
-.header ul li {
+.navbar ul li {
     margin-left: 3rem !important;
     transition: 1s all;
 }
 
-.header ul li .dropdown-menu {
+.navbar ul li:first-of-type{
+    /* margin-left: 0rem !important; */
+}
+
+.navbar ul li a {
+    padding: 0px !important;
+    color: #fff;
+}
+
+.navbar ul li .dropdown-menu {
     padding: 0rem !important;
     padding-top: 2% !important;
     padding-bottom: 2% !important;
     margin-top: 2% !important;
+    width: 15% !important;
 }
 
-.header ul li .dropdown-menu li {
+.navbar ul li .dropdown-menu li {
     margin-left: 0rem !important;
-    /* margin-top: .2rem !important; */
     transition: 1s all;
 }
 
-.header ul li .dropdown-menu li a {
+.navbar ul li .dropdown-menu li a {
     padding: 5% !important;
     color: #000 !important;
-}
-
-.header ul li a {
-    padding: 0px !important;
-    color: #fff !important;
 }
 
 
@@ -164,6 +167,20 @@ body{
 /* Extra small devices (phones, 320px and down) */
 @media only screen and (min-width: 320px) {
 
+    .navbar-brand{
+        width: 75% !important;
+    }
+
+    .navbar ul li a {
+        padding: 0px !important;
+        color: #000 !important;
+    }
+
+    .navbar ul li .dropdown-menu {
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+    }
+
     .navbar-brand img {
         width: 50% !important;
     }
@@ -225,6 +242,7 @@ body{
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 500px) {
+
     .navbar-brand img {
         width: 50% !important;
     }
@@ -320,6 +338,24 @@ body{
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 
+    .navbar-brand{
+        width: 40% !important;
+    }
+
+    .navbar ul li {
+        margin-left: 2rem !important;
+    }
+
+    .navbar ul li a {
+        padding: 0px !important;
+        color: #fff !important;
+    }
+
+    .navbar ul li .dropdown-menu {
+        padding-top: 2% !important;
+        padding-bottom: 2% !important;
+    }
+
     .navbar-brand img {
         width: 90% !important;
     }
@@ -368,6 +404,15 @@ body{
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 
+    .navbar-brand{
+        width: 32% !important;
+    }
+
+    .navbar ul li {
+        margin-left: 3rem !important;
+        transition: 1s all;
+    }
+
     .header ul li {
         margin-left: 3rem !important;
     }
@@ -396,6 +441,11 @@ body{
     .header ul li {
         margin-left: 5rem !important;
     }
+
+    .contact-us {
+        margin-top: 10% !important;
+        margin-bottom: 30% !important;
+    }
 }
 
 
@@ -405,11 +455,7 @@ body{
 /* Extra large devices (large laptops and desktops, 1800px and up) */
 @media only screen and (min-width: 1800px) {
 
-    /* .header ul li .dropdown-menu li a{
-        padding: 8% !important;
+    .contact-us {
+        margin-top: 14% !important;
     }
-
-    .header ul li{
-        margin-left: 5rem !important;
-    } */
 }

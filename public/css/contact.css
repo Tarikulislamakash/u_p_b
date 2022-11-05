@@ -290,7 +290,7 @@
 
     /* Visit Office */
     .visit-office {
-        margin-top: 15vw !important;
+        margin-top: 20vw !important;
     }
 
     /* Visit Office */
@@ -317,7 +317,7 @@
 
     /* Visit Office */
     .visit-office {
-        margin-top: 20vw !important;
+        margin-top: 25vw !important;
     }
 
     /* Visit Office */
@@ -333,5 +333,25 @@
         padding-right: 2.5rem !important;
         font-size: large;
     }
+
+}
+
+
+/* Extra large devices (large laptops and desktops, 1500px and up) */
+@media only screen and (min-width: 1500px) {
+
+    /* Visit Office */
+    .visit-office {
+        margin-top: 28vw !important;
+    }
+
+    /* Visit Office */
+
+}
+
+
+/* Extra large devices (large laptops and desktops, 1800px and up) */
+@media only screen and (min-width: 1800px) {
+
 
 }

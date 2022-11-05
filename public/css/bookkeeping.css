@@ -62,7 +62,6 @@
 }
 
 .offer-form{
-    /* padding: 2rem !important; */
     width: 75% !important;
     position: absolute !important;
     top: 40vh !important;
@@ -163,25 +162,25 @@
     }
 
     .service-we-offer-right{
-        height: 88vh !important;
+        height: 35rem !important;
         margin-top: 3rem !important;
     }
-    
+
     .service-we-offer-right img{
         height: 100% !important;
     }
-    
+
     .offer-form{
-        top: 32vh !important;
+        top: 13rem !important;
         width: 15rem !important;
     }
-    
+
     .service-we-offer-right .form-control{
         padding-left: 1.5rem !important;
         padding-top: .3rem !important;
         padding-bottom: .3rem !important;
     }
-    
+
     .service-we-offer-right button{
         padding: .3rem !important;
         padding-left: 2rem !important;
@@ -269,10 +268,10 @@
     }
 
     .service-we-offer-right{
-        height: 88vh !important;
+        height: 35rem !important;
         margin-top: 0rem !important;
     }
-    
+
     .offer-form{
         width: 15rem !important;
     }
@@ -311,7 +310,7 @@
     }
 
     .offer-form{
-        top: 30vh !important;
+        top: 13rem !important;
         width: 15rem !important;
     }
 
@@ -320,7 +319,7 @@
         padding-top: .3rem !important;
         padding-bottom: .3rem !important;
     }
-    
+
     .service-we-offer-right button{
         padding: .3rem !important;
         padding-left: 2rem !important;
@@ -334,6 +333,50 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 
+    .service-we-offer{
+        margin-top: 30vw !important;
+    }
 
-    
+    .contact-us{
+        margin-top: 5vw !important;
+    }
+
+}
+
+
+
+/* Extra large devices (large laptops and desktops, 1500px and up) */
+@media only screen and (min-width: 1500px) {
+
+    .service-we-offer-right{
+        height: 40rem !important;
+        /* margin-top: 3rem !important; */
+    }
+
+    .offer-form{
+        top: 16rem !important;
+        width: 15rem !important;
+    }
+
+}
+
+
+
+
+
+/* Extra large devices (large laptops and desktops, 1800px and up) */
+@media only screen and (min-width: 1800px) {
+
+    .account{
+        margin-bottom: 0vw !important;
+    }
+
+    .contact-us{
+        margin-top: 0vw !important;
+    }
+
+    .service-we-offer{
+        margin-top: 35vw !important;
+    }
+
 }

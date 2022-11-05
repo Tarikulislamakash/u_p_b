@@ -24,7 +24,7 @@
 
 	<style>
 		@media all and (min-width: 992px) {
-			.navbar .nav-item .dropdown-menu {
+			/* .navbar .nav-item .dropdown-menu {
 				display: none;
 			}
 
@@ -36,84 +36,84 @@
 
 			.navbar .nav-item .dropdown-menu {
 				margin-top: 0;
-			}
+			} */
 		}
 	</style>
 </head>
 
 <body>
 	<!-- Header -->
-	<div class="header">
+	{{-- <div class=""> --}}
 		<nav class="navbar navbar-expand-lg navbar-light">
 			<div class="container">
 				<a class="navbar-brand" href="{{ route('home') }}">
 					<img src="asset/Group 21821.png" alt="" />
 				</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav ms-auto">
 						<li class="nav-item active">
-							<a class="nav-link" href="{{ route('home') }}">Home</a>
+							<a class="nav-link" style="color:black important!;" href="{{ route('home') }}">Home</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="{{ route('about') }}">About</a>
+							<a class="nav-link" style="color:black important!;" href="{{ route('about') }}">About</a>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+							<a class="nav-link dropdown-toggle" style="color:black important!;" href="#" data-bs-toggle="dropdown">
 								Service
 							</a>
 							<ul class="dropdown-menu">
 								<li>
-									<a class="dropdown-item" href="{{ route('bookkeeping') }}">
+									<a class="dropdown-item" style="color:black important!;" href="{{ route('bookkeeping') }}">
 										Book Keeping</a>
 								</li>
 								<li>
-									<a class="dropdown-item" href="{{ route('cis') }}">
+									<a class="dropdown-item" style="color:black important!;" href="{{ route('cis') }}">
 										CIS
 									</a>
 								</li>
 								<li>
-									<a class="dropdown-item" href="{{ route('self') }}">
+									<a class="dropdown-item" style="color:black important!;" href="{{ route('self') }}">
 										Self
 									</a>
 								</li>
 								<li>
-									<a class="dropdown-item" href="{{ route('thank-you') }}">
+									<a class="dropdown-item" style="color:black important!;" href="{{ route('thank-you') }}">
 										Thank You
 									</a>
 								</li>
 								<li>
-									<a class="dropdown-item" href="{{ route('utr') }}">
+									<a class="dropdown-item" style="color:black important!;" href="{{ route('utr') }}">
 										UTR
 									</a>
 								</li>
 								<li>
-									<a class="dropdown-item" href="{{ route('vat-filing') }}">
+									<a class="dropdown-item" style="color:black important!;" href="{{ route('vat-filing') }}">
 										Vat Filing
 									</a>
 								</li>
-								@if( !auth()->user() )
 								<li>
-									<a class="dropdown-item" href="{{ route('register') }}">
-										Register
-									</a>
-								</li>
-								@endif
-								<li>
-									<a class="dropdown-item" href="{{ route('payment') }}">
+									<a class="dropdown-item" style="color:black important!;" href="{{ route('payment') }}">
 										Payment
 									</a>
 								</li>
 							</ul>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="{{ route('contact') }}">Contact Us</a>
+							<a class="nav-link" style="color:black important!;" href="{{ route('contact') }}">Contact Us</a>
 						</li>
+                        @if( !auth()->user() )
+                        <li>
+                            <a class="dropdown-item" style="color:black important!;" href="{{ route('register') }}">
+                                Register
+                            </a>
+                        </li>
+                        @endif
 						@if( !auth()->user() )
 						<li class="nav-item">
-							<a class="nav-link" href="{{ route('login') }}">My Account</a>
+							<a class="nav-link" style="color:black important!;" href="{{ route('login') }}">Login</a>
 						</li>
 						@else
 						<li class="nav-item">
@@ -128,8 +128,11 @@
 				</div>
 			</div>
 		</nav>
-	</div>
+	{{-- </div> --}}
 	<!-- Header -->
+
+
+
 
 	@yield('content')
 
@@ -176,7 +179,9 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<!-- JQuery CDN -->
 	<!-- Bootstrap JS CDN -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
 	<!-- Bootstrap JS CDN -->
 
 	<script>
