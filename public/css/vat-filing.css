@@ -1,5 +1,5 @@
 /* Vat Filing */
-.vat-filing{
+.vat-filing {
     /* background-image: url('../asset/Group\ 21984.png');
     background-size: cover;
     background-position: center right; */
@@ -7,90 +7,91 @@
     margin-bottom: 20% !important;
 }
 
-.vat-filing .row{
+.vat-filing .row {
     /* padding-right: 0px !important; */
 }
 
-.vat-filing h1{
+.vat-filing h1 {
     border-bottom: 2px dotted #87ACD2 !important;
     display: inline !important;
 }
 
 .vat-filing h1,
 .vat-filing h3,
-.vat-filing button{
+.vat-filing button {
     /* text-transform: capitalize !important; */
 }
 
-.vat-filing-right{
+.vat-filing-right {
     position: absolute;
     top: 0;
     right: 0;
     padding-right: 0px !important;
 }
 
-.vat-filing h3{
+.vat-filing h3 {
     margin-top: 8% !important;
     font-size: 140% !important;
     font-weight: 500;
 }
 
-.vat-filing h3:last-of-type{
+.vat-filing h3:last-of-type {
     margin-top: 5% !important;
 }
 
-.vat-filing-left{
+.vat-filing-left {
     margin-top: 4% !important;
 }
+
 /* Vat Filing */
 
 
 
 
 /* Service We offer */
-.service-we-offer{
+.service-we-offer {
     margin-bottom: 20vh !important;
 }
 
-.service-we-offer-left{}
+.service-we-offer-left {}
 
-.service-we-offer-left .list-group{}
+.service-we-offer-left .list-group {}
 
-.service-we-offer-left .list-group li img{
+.service-we-offer-left .list-group li img {
     width: 1.5rem !important;
     height: 1.5rem !important;
     margin-right: 1rem !important;
     margin-top: 1.4% !important;
 }
 
-.service-we-offer-left .list-group li{
+.service-we-offer-left .list-group li {
     border: none !important;
     font-size: 1.6rem !important;
     margin-bottom: 1.2rem !important;
     color: #000 !important;
 }
 
-.service-we-offer-right{
+.service-we-offer-right {
     background-size: cover;
     height: 120vh !important;
     position: relative;
 }
 
-.service-we-offer-right img{
+.service-we-offer-right img {
     height: 100% !important;
 }
 
-.offer-form{
+.offer-form {
     width: 75% !important;
     position: absolute !important;
     top: 40vh !important;
 }
 
-.service-we-offer-right label{
+.service-we-offer-right label {
     color: #666 !important;
 }
 
-.service-we-offer-right .form-control{
+.service-we-offer-right .form-control {
     background-color: #fff !important;
     border-radius: 5rem !important;
     padding-left: 1.5rem !important;
@@ -99,11 +100,11 @@
     border: .1rem solid #555 !important;
 }
 
-.service-we-offer-right label{
+.service-we-offer-right label {
     text-align: left !important;
 }
 
-.service-we-offer-right button{
+.service-we-offer-right button {
     background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
     border: none !important;
     padding: .4rem !important;
@@ -114,18 +115,17 @@
     font-size: large;
 }
 
-.service-we-offer-right button:focus
-.service-we-offer-right button:active
-{
+.service-we-offer-right button:focus .service-we-offer-right button:active {
     box-shadow: none !important;
     border: none !important;
     outline: none !important;
 }
 
 .service-we-offer-right .form-control:active,
-.service-we-offer-right .form-control:focus{
+.service-we-offer-right .form-control:focus {
     box-shadow: none !important;
 }
+
 /* Service We offer */
 
 
@@ -136,77 +136,79 @@
 @media only screen and (min-width: 320px) {
 
     /* CIS Return */
-    .vat-filing-right{
+    .vat-filing-right {
         top: 18vw !important;
     }
 
-    .vat-filing-right img{
+    .vat-filing-right img {
         width: 70% !important;
         position: absolute;
         right: 0 !important;
     }
 
-    .vat-filing-left{
+    .vat-filing-left {
         margin-top: 70vw !important;
     }
 
-    .vat-filing-left h1{
+    .vat-filing-left h1 {
         font-size: 140% !important;
     }
 
-    .vat-filing h3{
+    .vat-filing h3 {
         font-size: 105% !important;
         font-weight: 400 !important;
 
     }
+
     /* CIS Return */
 
     /* Service We Offer */
-    .service-we-offer{}
+    .service-we-offer {}
 
-    .service-we-offer-left{}
+    .service-we-offer-left {}
 
-    .service-we-offer h1{
+    .service-we-offer h1 {
         font-size: 140% !important;
     }
 
-    .service-we-offer-left .list-group li{
+    .service-we-offer-left .list-group li {
         font-size: 1rem !important;
         margin-bottom: 0rem !important;
     }
 
-    .service-we-offer-left .list-group li img{
+    .service-we-offer-left .list-group li img {
         width: 1.2rem !important;
         height: 1.2rem !important;
         margin-top: 1.5% !important;
     }
 
-    .service-we-offer-right{
-        height: 88vh !important;
+    .service-we-offer-right {
+        height: 35rem !important;
         margin-top: 3rem !important;
     }
 
-    .service-we-offer-right img{
+    .service-we-offer-right img {
         height: 100% !important;
     }
 
-    .offer-form{
-        top: 32vh !important;
+    .offer-form {
+        top: 13rem !important;
         width: 15rem !important;
     }
 
-    .service-we-offer-right .form-control{
+    .service-we-offer-right .form-control {
         padding-left: 1.5rem !important;
         padding-top: .3rem !important;
         padding-bottom: .3rem !important;
     }
 
-    .service-we-offer-right button{
+    .service-we-offer-right button {
         padding: .3rem !important;
         padding-left: 2rem !important;
         padding-right: 2rem !important;
         font-size: medium;
     }
+
     /* Service We Offer */
 
 }
@@ -215,36 +217,38 @@
 @media only screen and (min-width: 500px) {
 
     /* CIS Return */
-    .vat-filing{
+    .vat-filing {
         margin-bottom: 12% !important;
     }
 
-    .vat-filing-left h1{
+    .vat-filing-left h1 {
         font-size: 160% !important;
     }
 
-    .vat-filing-left h3{
+    .vat-filing-left h3 {
         font-size: 115% !important;
     }
+
     /* CIS Return */
 
     /* Service We Offer */
-    .service-we-offer{}
+    .service-we-offer {}
 
-    .service-we-offer-left{}
+    .service-we-offer-left {}
 
-    .service-we-offer h1{
+    .service-we-offer h1 {
         font-size: 180% !important;
         margin-bottom: 5% !important;
     }
 
-    .service-we-offer-left .list-group li{
+    .service-we-offer-left .list-group li {
         font-size: 1.2rem !important;
     }
 
-    .service-we-offer-left .list-group li img{
+    .service-we-offer-left .list-group li img {
         margin-top: 1% !important;
     }
+
     /* Service We Offer */
 
 }
@@ -253,52 +257,55 @@
 @media only screen and (min-width: 768px) {
 
     /* CIS Return */
-    .vat-filing{
+    .vat-filing {
         margin-bottom: 15% !important;
         margin-top: 0px !important;
     }
 
-    .vat-filing-right img{
+    .vat-filing-right img {
         width: 80% !important;
     }
 
-    .vat-filing-left{
+    .vat-filing-left {
         margin-top: 8vw !important;
     }
 
-    .vat-filing-left h2{
+    .vat-filing-left h2 {
         font-size: 180% !important;
     }
-    .vat-filing-left p{
+
+    .vat-filing-left p {
         font-size: 110% !important;
     }
+
     /* CIS Return */
 
     /* Service We Offer */
-    .service-we-offer h1{
+    .service-we-offer h1 {
         margin-bottom: 4rem !important;
         font-size: 200% !important;
     }
 
-    .service-we-offer-left .list-group li{
+    .service-we-offer-left .list-group li {
         font-size: 1.4rem !important;
         margin-bottom: 1rem !important;
     }
 
-    .service-we-offer-left .list-group li img{
+    .service-we-offer-left .list-group li img {
         width: 1.4rem !important;
         height: 1.4rem !important;
         /* margin-top: 1.6% !important; */
     }
 
-    .service-we-offer-right{
-        height: 88vh !important;
+    .service-we-offer-right {
+        height: 35rem !important;
         margin-top: 0rem !important;
     }
 
-    .offer-form{
+    .offer-form {
         width: 15rem !important;
     }
+
     /* Service We Offer */
 
 }
@@ -307,49 +314,51 @@
 @media only screen and (min-width: 992px) {
 
     /* CIS Return */
-    .vat-filing{
+    .vat-filing {
         margin-bottom: 25vw !important;
     }
 
-    .vat-filing-right{
+    .vat-filing-right {
         top: 0vw !important;
     }
 
-    .vat-filing-right img{
+    .vat-filing-right img {
         width: 100% !important;
     }
 
-    .vat-filing-left{
+    .vat-filing-left {
         margin-top: 7vh !important;
     }
 
-    .vat-filing-left p{
+    .vat-filing-left p {
         font-size: 120% !important;
     }
+
     /* CIS Return */
 
     /* Service We Offer */
-    .service-we-offer-left .list-group li{
+    .service-we-offer-left .list-group li {
         font-size: 1.5rem !important;
     }
 
-    .offer-form{
-        top: 30vh !important;
+    .offer-form {
+        top: 13rem !important;
         width: 15rem !important;
     }
 
-    .service-we-offer-right .form-control{
+    .service-we-offer-right .form-control {
         padding-left: 1.5rem !important;
         padding-top: .3rem !important;
         padding-bottom: .3rem !important;
     }
 
-    .service-we-offer-right button{
+    .service-we-offer-right button {
         padding: .3rem !important;
         padding-left: 2rem !important;
         padding-right: 2rem !important;
         font-size: medium;
     }
+
     /* Service We Offer */
 
 }
@@ -359,7 +368,7 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 
-    .service-we-offer{
+    .service-we-offer {
         margin-top: 30vw !important;
     }
 
@@ -370,12 +379,17 @@
 /* Extra large devices (large laptops and desktops, 1500px and up) */
 @media only screen and (min-width: 1500px) {
 
-    .contact-us{
-        /* margin-top: 8vw !important; */
+    .service-we-offer {
+        margin-top: 34vw !important;
     }
 
-    .service-we-offer{
-        margin-top: 34vw !important;
+    .service-we-offer-right {
+        height: 40rem !important;
+    }
+
+    .offer-form {
+        top: 16rem !important;
+        width: 15rem !important;
     }
 
 }
@@ -387,7 +401,7 @@
 /* Extra large devices (large laptops and desktops, 1800px and up) */
 @media only screen and (min-width: 1800px) {
 
-    .contact-us{
+    .contact-us {
         margin-top: 0vw !important;
     }
 
