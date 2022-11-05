@@ -28,35 +28,34 @@ body{
 }
 
 .header {
-    /* z-index: 999; */
 }
 
-.header ul li {
+.navbar ul li {
     margin-left: 3rem !important;
     transition: 1s all;
 }
 
-.header ul li .dropdown-menu {
+.navbar ul li a {
+    padding: 0px !important;
+    color: #fff;
+}
+
+.navbar ul li .dropdown-menu {
     padding: 0rem !important;
     padding-top: 2% !important;
     padding-bottom: 2% !important;
     margin-top: 2% !important;
+    width: 15% !important;
 }
 
-.header ul li .dropdown-menu li {
+.navbar ul li .dropdown-menu li {
     margin-left: 0rem !important;
-    /* margin-top: .2rem !important; */
     transition: 1s all;
 }
 
-.header ul li .dropdown-menu li a {
+.navbar ul li .dropdown-menu li a {
     padding: 5% !important;
     color: #000 !important;
-}
-
-.header ul li a {
-    padding: 0px !important;
-    color: #fff !important;
 }
 
 
@@ -163,6 +162,16 @@ body{
 
 /* Extra small devices (phones, 320px and down) */
 @media only screen and (min-width: 320px) {
+
+    .navbar ul li a {
+        padding: 0px !important;
+        color: #000 !important;
+    }
+
+    .navbar ul li .dropdown-menu {
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+    }
 
     .navbar-brand img {
         width: 50% !important;
@@ -319,6 +328,16 @@ body{
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+
+    .navbar ul li a {
+        padding: 0px !important;
+        color: #fff !important;
+    }
+
+    .navbar ul li .dropdown-menu {
+        padding-top: 2% !important;
+        padding-bottom: 2% !important;
+    }
 
     .navbar-brand img {
         width: 90% !important;
