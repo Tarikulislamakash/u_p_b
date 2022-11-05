@@ -18,9 +18,7 @@
 
 .vat-filing h1,
 .vat-filing h3,
-.vat-filing button {
-    /* text-transform: capitalize !important; */
-}
+.vat-filing button {}
 
 .vat-filing-right {
     position: absolute;
