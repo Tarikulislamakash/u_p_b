@@ -123,7 +123,7 @@
     .established-leadership p{
         font-size: 100% !important;
     }
-    
+
     .established-leadership h1{
         font-size: 150% !important;
     }
@@ -191,7 +191,7 @@
     .established-leadership p{
         font-size: 105% !important;
     }
-    
+
     .established-leadership h1{
         font-size: 180% !important;
     }
@@ -201,7 +201,7 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    
+
     /* Our Journey */
     .our-journey{
         margin-bottom: 6% !important;
@@ -248,5 +248,34 @@
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    
+
+    .established-leadership{
+        margin-top: 8% !important;
+    }
+
+    .contact-us{
+        margin-top: 5% !important;
+    }
+
+}
+
+
+
+/* Extra large devices (large laptops and desktops, 1500px and up) */
+@media only screen and (min-width: 1500px) {
+
+    .established-leadership{
+        margin-top: 12% !important;
+    }
+
+}
+
+
+/* Extra large devices (large laptops and desktops, 1800px and up) */
+@media only screen and (min-width: 1800px) {
+
+    .established-leadership{
+        margin-top: 15% !important;
+    }
+
 }

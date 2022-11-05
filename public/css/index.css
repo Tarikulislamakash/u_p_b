@@ -408,7 +408,7 @@
     .who-are-we h1{
         font-size: 200% !important;
     }
-    
+
     .who-are-we h3{
         font-size: 140% !important;
     }
@@ -456,7 +456,7 @@
         padding-top: .3rem !important;
         padding-bottom: .3rem !important;
     }
-    
+
     .book-appointment .appointment-right button{
         padding: .5rem !important;
         padding-left: 2rem !important;
@@ -476,7 +476,7 @@
     .who-are-we h1{
         font-size: 250% !important;
     }
-    
+
     .who-are-we h3{
         font-size: 180% !important;
     }
@@ -519,12 +519,25 @@
         padding-top: .5rem !important;
         padding-bottom: .5rem !important;
     }
-    
+
     .book-appointment .appointment-right button{
         padding: 1rem !important;
         padding-left: 2.5rem !important;
         padding-right: 2.5rem !important;
         font-size: large;
     }
+
+}
+
+
+
+/* Extra large devices (large laptops and desktops, 1500px and up) */
+@media only screen and (min-width: 1500px) {
+
+    /* Oue Service */
+    .our-service{
+        margin-top: 8% !important;
+    }
+    /* Oue Service */
 
 }

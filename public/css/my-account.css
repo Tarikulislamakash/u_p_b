@@ -126,7 +126,7 @@
         padding-top: .3rem !important;
         padding-bottom: .3rem !important;
     }
-    
+
     .account-left button{
         padding: .3rem !important;
         padding-left: 2rem !important;
@@ -180,7 +180,7 @@
     .account-left h1{
         font-size: 180% !important;
     }
-    
+
     .account-left button{
         padding: .4rem !important;
         padding-left: 3rem !important;
@@ -238,7 +238,7 @@
         padding-top: .3rem !important;
         padding-bottom: .3rem !important;
     }
-    
+
     .service-we-offer-right button{
         padding: .3rem !important;
         padding-left: 2rem !important;
@@ -252,6 +252,36 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 
+    .account{
+        margin-bottom: 12vw !important;
+    }
 
-    
+}
+
+
+
+/* Extra large devices (large laptops and desktops, 1500px and up) */
+@media only screen and (min-width: 1500px) {
+
+    .contact-us{
+        margin-top: 8vw !important;
+    }
+
+}
+
+
+
+
+
+/* Extra large devices (large laptops and desktops, 1800px and up) */
+@media only screen and (min-width: 1800px) {
+
+    .account{
+        margin-bottom: 0vw !important;
+    }
+
+    .contact-us{
+        margin-top: 12vw !important;
+    }
+
 }

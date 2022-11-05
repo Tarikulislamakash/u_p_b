@@ -94,13 +94,6 @@
 										Vat Filing
 									</a>
 								</li>
-								@if( !auth()->user() )
-								<li>
-									<a class="dropdown-item" style="color:black important!;" href="{{ route('register') }}">
-										Register
-									</a>
-								</li>
-								@endif
 								<li>
 									<a class="dropdown-item" style="color:black important!;" href="{{ route('payment') }}">
 										Payment
@@ -111,9 +104,16 @@
 						<li class="nav-item">
 							<a class="nav-link" style="color:black important!;" href="{{ route('contact') }}">Contact Us</a>
 						</li>
+                        @if( !auth()->user() )
+                        <li>
+                            <a class="dropdown-item" style="color:black important!;" href="{{ route('register') }}">
+                                Register
+                            </a>
+                        </li>
+                        @endif
 						@if( !auth()->user() )
 						<li class="nav-item">
-							<a class="nav-link" style="color:black important!;" href="{{ route('login') }}">My Account</a>
+							<a class="nav-link" style="color:black important!;" href="{{ route('login') }}">Login</a>
 						</li>
 						@else
 						<li class="nav-item">
