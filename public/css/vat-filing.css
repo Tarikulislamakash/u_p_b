@@ -7,9 +7,7 @@
     margin-bottom: 20% !important;
 }
 
-.vat-filing .row {
-    /* padding-right: 0px !important; */
-}
+.vat-filing .row {}
 
 .vat-filing h1 {
     border-bottom: 2px dotted #87ACD2 !important;
