@@ -384,7 +384,7 @@
     /* Oue Service */
     .our-service {
         background-size: 55% 65vh;
-        margin-top: 25vw !important;
+        margin-top: 15vw !important;
         margin-bottom: 10vw !important;
     }
 
@@ -455,7 +455,7 @@
     /* Oue Service */
     .our-service {
         background-size: 45% 75vh;
-        margin-top: 5% !important;
+        margin-top: 0vw !important;
     }
 
     .our-service h1 {
@@ -561,4 +561,59 @@
 
     /* Oue Service */
 
+}
+
+
+
+
+
+
+@media only screen and (min-width: 992px) {}
+
+@media only screen and (min-width: 1050px) {
+    .our-service {
+        margin-top: 2vw !important;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .our-service {
+        margin-top: 5vw !important;
+    }
+}
+
+@media only screen and (min-width: 1150px) {
+    .our-service {
+        margin-top: 6vw !important;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .our-service {
+        margin-top: -8vw !important;
+    }
+}
+
+@media only screen and (min-width: 1250px) {
+    .our-service {
+        margin-top: -4vw !important;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .our-service {
+        margin-top: 0vw !important;
+    }
+}
+
+@media only screen and (min-width: 1350px) {
+    .our-service {
+        margin-top: 5vw !important;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .our-service {
+        margin-top: 10vw !important;
+    }
 }
