@@ -90,7 +90,7 @@
                                 </p>
                             </div>
                             <div class="single-service-button">
-                                <a href="" class="me-0">LEARN MORE</a>
+                                <a href="{{ route('cis') }}" class="me-0">LEARN MORE</a>
                             </div>
                         </div>
                     </div>
