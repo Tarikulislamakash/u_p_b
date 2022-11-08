@@ -56,7 +56,7 @@
             </div>
         </div>
         <div class="row service">
-            <div class="swiper mySwiper">
+            <div class="swiper mySwiper px-2">
                 <div class="swiper-wrapper">
                     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 swiper-slide">
                         <div class="single-service d-flex flex-column align-items-center">
