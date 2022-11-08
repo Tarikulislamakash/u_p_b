@@ -35,7 +35,7 @@
                 <p>Outsource your books at a cheaper cost with</p>
                 <h3>frontier consultancy</h3>
                 <p>Simple Online Services</p>
-                <button>find out more</button>
+                <a href="{{ route('about') }}">find out more</a>
             </div>
             <div class="col-md-7 whoAreWe-right">
                 <img class="img-fluid" src="asset/Group 21984@2x.png" alt="" />

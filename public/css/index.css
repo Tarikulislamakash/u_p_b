@@ -1,21 +1,19 @@
 /* Who We Are */
-.who-are-we{
-}
+.who-are-we {}
 
-.who-are-we .row{
-}
+.who-are-we .row {}
 
 .who-are-we h1,
 .who-are-we h3,
-.who-are-we button{
+.who-are-we a {
     text-transform: uppercase !important;
 }
 
-.whoAreWe-left p{
+.whoAreWe-left p {
     font-size: 1.5rem !important;
 }
 
-.whoAreWe-left button{
+.whoAreWe-left a {
     background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
     border: none !important;
     padding: .5rem !important;
@@ -23,19 +21,22 @@
     padding-right: 1.4rem !important;
     border-radius: 2rem !important;
     color: #fff !important;
+    text-decoration: none;
+    display: inline-block;
 }
 
-.whoAreWe-right{
+.whoAreWe-right {
     position: absolute;
     top: 0 !important;
     right: 0;
     padding-right: 0px !important;
 }
+
 /* Who We Are */
 
 
 /* Oue Service */
-.our-service{
+.our-service {
     height: 100vh;
     background-image: url('../asset/Group\ 21983@2x.png');
     background-position: center left;
@@ -43,13 +44,13 @@
     background-repeat: no-repeat;
 }
 
-.our-service h1{
+.our-service h1 {
     border-bottom: 2px dotted #333;
     border-color: blueviolet;
     display: inline-block;
 }
 
-.single-service{
+.single-service {
     background-color: #fff !important;
     border: 1px solid #333;
     border-radius: 1.5rem;
@@ -57,16 +58,16 @@
     position: relative;
 }
 
-.single-service-button{
+.single-service-button {
     position: absolute;
     bottom: 5% !important;
 }
 
-.swiper-wrapper{
+.swiper-wrapper {
     padding-top: 5% !important;
 }
 
-.service .swiper-slide{
+.service .swiper-slide {
     transition: 1s all;
     padding-top: 6% !important;
 }
@@ -75,11 +76,11 @@
     transform: scale(1.06);
 }
 
-.single-service h5{
+.single-service h5 {
     border-bottom: 1px dotted blueviolet;
 }
 
-.single-service button{
+.single-service button {
     background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
     border: none !important;
     padding: .5rem !important;
@@ -88,23 +89,27 @@
     border-radius: 2rem !important;
     color: #fff !important;
 }
+
 /* Oue Service */
 
 /* Book Appointment */
-.book-appointment{}
-.book-appointment .appointment-left{
+.book-appointment {}
+
+.book-appointment .appointment-left {
     position: absolute;
     left: -3.5rem !important;
     padding-left: 0 !important;
 }
-.book-appointment .appointment-right{}
+
+.book-appointment .appointment-right {}
+
 .book-appointment .appointment-right h6,
 .book-appointment .appointment-right p,
-.book-appointment .appointment-right label{
+.book-appointment .appointment-right label {
     color: #666 !important;
 }
 
-.book-appointment .appointment-right .form-control{
+.book-appointment .appointment-right .form-control {
     background-color: #E5E8F4 !important;
     border-radius: .5rem !important;
     padding-left: 1.5rem !important;
@@ -113,11 +118,11 @@
     border: .1rem solid #555 !important;
 }
 
-.book-appointment .appointment-right label{
+.book-appointment .appointment-right label {
     text-align: left !important;
 }
 
-.book-appointment .appointment-right button{
+.book-appointment .appointment-right button {
     background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
     border: none !important;
     padding: 1rem !important;
@@ -129,24 +134,25 @@
     margin-top: 1rem !important;
 }
 
-.book-appointment .appointment-right button:focus
-.book-appointment .appointment-right button:active
-{
+.book-appointment .appointment-right button:focus .book-appointment .appointment-right button:active {
     box-shadow: none !important;
     border: none !important;
     outline: none !important;
 }
 
 .book-appointment .appointment-right .form-control:active,
-.book-appointment .appointment-right .form-control:focus{
+.book-appointment .appointment-right .form-control:focus {
     /* outline: none !important;
     border: 0px !important; */
     box-shadow: none !important;
 }
 
-.book-appointment .appointment-right{}
-.book-appointment{}
-.book-appointment{}
+.book-appointment .appointment-right {}
+
+.book-appointment {}
+
+.book-appointment {}
+
 /* Book Appointment */
 
 
@@ -155,57 +161,60 @@
 @media only screen and (min-width: 320px) {
 
     /* Who We Are */
-    .whoAreWe-right{
+    .whoAreWe-right {
         top: 18vw !important;
     }
 
-    .whoAreWe-right img{
+    .whoAreWe-right img {
         width: 70% !important;
         position: absolute;
         right: 0 !important;
     }
 
-    .whoAreWe-left{
+    .whoAreWe-left {
         margin-top: 70vw !important;
     }
 
-    .whoAreWe-left h1{
+    .whoAreWe-left h1 {
         font-size: 5vw !important;
     }
-    .whoAreWe-left p{
+
+    .whoAreWe-left p {
         font-size: 3vw !important;
         margin-bottom: 0 !important;
     }
 
-    .whoAreWe-left h3{
+    .whoAreWe-left h3 {
         font-size: 4vw !important;
         margin-top: 2vw !important;
     }
-    .whoAreWe-left button{
+
+    .whoAreWe-left a {
         font-size: 2.5vw !important;
         margin-top: 2vw !important;
         margin-bottom: 2vw !important;
     }
+
     /* Who We Are */
 
     /* Oue Service */
-    .our-service{
+    .our-service {
         height: auto;
         background-position: top left;
         background-size: 65% 60vh;
         margin-top: 18vw !important;
     }
 
-    .our-service p{}
+    .our-service p {}
 
-    .our-service h1{
+    .our-service h1 {
         padding-top: 0% !important;
         margin-bottom: 40% !important;
         margin-top: -15% !important;
         font-size: 1.2rem !important;
     }
 
-    .single-service{
+    .single-service {
         margin-bottom: 15% !important;
         padding-top: 5% !important;
         padding: 10% !important;
@@ -214,15 +223,15 @@
         height: 18rem !important;
     }
 
-    .single-service button{
+    .single-service button {
         font-size: 90% !important;
     }
 
-    .single-service h5{
+    .single-service h5 {
         font-size: 100% !important;
     }
 
-    .single-service p{
+    .single-service p {
         font-size: 90% !important;
     }
 
@@ -230,101 +239,106 @@
         transform: scale(1.1);
     } */
 
-    .service{
+    .service {
         padding-left: 20% !important;
         padding-right: 20% !important;
     }
 
-    .swiper-pagination{
+    .swiper-pagination {
         bottom: 0 !important;
     }
+
     /* Oue Service */
 
 
     /* Book Appointment */
-    .book-appointment{
+    .book-appointment {
         margin-top: 4vw !important;
     }
 
-    .book-appointment .appointment-right{
+    .book-appointment .appointment-right {
         margin-top: 90vw !important;
     }
 
-    .book-appointment .appointment-right button{
+    .book-appointment .appointment-right button {
         padding: .5rem !important;
         padding-left: 2rem !important;
         padding-right: 2rem !important;
         font-size: small;
     }
+
     /* Book Appointment */
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 500px) {
 
-    .whoAreWe-right{
+    .whoAreWe-right {
         top: 18vw !important;
     }
 
-    .whoAreWe-right img{
+    .whoAreWe-right img {
         width: 40vw !important;
         height: 45vw !important;
     }
 
-    .whoAreWe-left{
+    .whoAreWe-left {
         margin-top: 10vw !important;
     }
 
-    .whoAreWe-left h1{
+    .whoAreWe-left h1 {
         font-size: 3.5vw !important;
     }
-    .whoAreWe-left p{
+
+    .whoAreWe-left p {
         font-size: 2.3vw !important;
         margin-bottom: 0 !important;
     }
 
-    .whoAreWe-left h3{
+    .whoAreWe-left h3 {
         font-size: 2.5vw !important;
         margin-top: 2vw !important;
     }
-    .whoAreWe-left button{
+
+    .whoAreWe-left a {
         font-size: 2.2vw !important;
         margin-top: 2vw !important;
         margin-bottom: 2vw !important;
     }
 
     /* Oue Service */
-    .our-service{
+    .our-service {
         background-size: 65% 65vh;
         margin-top: 28vw !important;
     }
 
-    .our-service h1{
+    .our-service h1 {
         text-align: center !important;
         font-size: 1.8rem !important;
         margin-top: -10% !important;
         margin-bottom: 30% !important;
     }
 
-    .service{
+    .service {
         padding-left: 0% !important;
         padding-right: 0% !important;
     }
 
-    .single-service{
+    .single-service {
         height: 20rem !important;
     }
 
-    .single-service h5{
+    .single-service h5 {
         font-size: 120% !important;
     }
 
-    .single-service p{
+    .single-service p {
         font-size: 95% !important;
     }
+
     /* Oue Service */
 
-    .appointment-right{
+    .appointment-right {
         padding-left: 8vw !important;
         padding-right: 8vw !important;
     }
@@ -333,55 +347,58 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 
-    .whoAreWe-right{
+    .whoAreWe-right {
         top: 18vw !important;
     }
 
-    .whoAreWe-right img{
+    .whoAreWe-right img {
         width: 80% !important;
         height: 50vw !important;
     }
 
-    .whoAreWe-left{
+    .whoAreWe-left {
         margin-top: 10vw !important;
     }
 
-    .whoAreWe-left h1{
+    .whoAreWe-left h1 {
         font-size: 3.5vw !important;
     }
-    .whoAreWe-left p{
+
+    .whoAreWe-left p {
         font-size: 2.3vw !important;
         margin-bottom: 0 !important;
     }
 
-    .whoAreWe-left h3{
+    .whoAreWe-left h3 {
         font-size: 2.5vw !important;
         margin-top: 2vw !important;
     }
-    .whoAreWe-left button{
+
+    .whoAreWe-left a {
         font-size: 2.2vw !important;
         margin-top: 2vw !important;
         margin-bottom: 2vw !important;
     }
 
     /* Oue Service */
-    .our-service{
+    .our-service {
         background-size: 55% 65vh;
         margin-top: 25vw !important;
         margin-bottom: 10vw !important;
     }
 
-    .our-service h1{
+    .our-service h1 {
         margin-top: 0% !important;
         margin-bottom: 20% !important;
     }
 
-    .single-service p{
+    .single-service p {
         font-size: 100% !important;
     }
+
     /* Oue Service */
 
-    .book-appointment .appointment-right{
+    .book-appointment .appointment-right {
         padding-left: 2vw !important;
         padding-right: 2vw !important;
         margin-top: 0 !important;
@@ -391,39 +408,39 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 
-    .whoAreWe-right img{
+    .whoAreWe-right img {
         width: 100% !important;
         height: auto !important;
     }
 
-    .whoAreWe-right{
+    .whoAreWe-right {
         top: 0px !important;
     }
 
-    .whoAreWe-left{
+    .whoAreWe-left {
         margin-top: 7vh !important;
         margin-bottom: 20vh;
     }
 
-    .who-are-we h1{
+    .who-are-we h1 {
         font-size: 200% !important;
     }
 
-    .who-are-we h3{
+    .who-are-we h3 {
         font-size: 140% !important;
     }
 
     .who-are-we h1,
     .who-are-we h3,
-    .who-are-we button{
+    .who-are-we button {
         text-transform: uppercase !important;
     }
 
-    .whoAreWe-left p{
+    .whoAreWe-left p {
         font-size: 120% !important;
     }
 
-    .whoAreWe-left button{
+    .whoAreWe-left a {
         background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
         border: none !important;
         padding: .5rem !important;
@@ -435,29 +452,30 @@
     }
 
     /* Oue Service */
-    .our-service{
+    .our-service {
         background-size: 45% 75vh;
         margin-top: 5% !important;
     }
 
-    .our-service h1{
+    .our-service h1 {
         margin-bottom: 8% !important;
         font-size: 2rem !important;
     }
 
-    .our-service-title{
+    .our-service-title {
         font-size: 200% !important;
         margin-top: 0vh !important;
         margin-bottom: 0vh !important;
     }
+
     /* Oue Service */
 
-    .book-appointment .appointment-right .form-control{
+    .book-appointment .appointment-right .form-control {
         padding-top: .3rem !important;
         padding-bottom: .3rem !important;
     }
 
-    .book-appointment .appointment-right button{
+    .book-appointment .appointment-right button {
         padding: .5rem !important;
         padding-left: 2rem !important;
         padding-right: 2rem !important;
@@ -468,30 +486,30 @@
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    .whoAreWe-left{
+    .whoAreWe-left {
         margin-top: 15vh !important;
         margin-bottom: 35vh !important;
     }
 
-    .who-are-we h1{
+    .who-are-we h1 {
         font-size: 250% !important;
     }
 
-    .who-are-we h3{
+    .who-are-we h3 {
         font-size: 180% !important;
     }
 
     .who-are-we h1,
     .who-are-we h3,
-    .who-are-we button{
+    .who-are-we button {
         text-transform: uppercase !important;
     }
 
-    .whoAreWe-left p{
+    .whoAreWe-left p {
         font-size: 1.5rem !important;
     }
 
-    .whoAreWe-left button{
+    .whoAreWe-left a {
         background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
         border: none !important;
         padding: .5rem !important;
@@ -503,24 +521,25 @@
     }
 
     /* Oue Service */
-    .our-service{
+    .our-service {
         margin-bottom: 15vh !important;
         margin-top: 0% !important;
         background-size: 45% 85vh;
         padding-bottom: 5% !important;
     }
 
-    .our-service-title{
+    .our-service-title {
         font-size: 250% !important;
     }
+
     /* Oue Service */
 
-    .book-appointment .appointment-right .form-control{
+    .book-appointment .appointment-right .form-control {
         padding-top: .5rem !important;
         padding-bottom: .5rem !important;
     }
 
-    .book-appointment .appointment-right button{
+    .book-appointment .appointment-right button {
         padding: 1rem !important;
         padding-left: 2.5rem !important;
         padding-right: 2.5rem !important;
@@ -535,9 +554,10 @@
 @media only screen and (min-width: 1500px) {
 
     /* Oue Service */
-    .our-service{
+    .our-service {
         margin-top: 8% !important;
     }
+
     /* Oue Service */
 
 }
