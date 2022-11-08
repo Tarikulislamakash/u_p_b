@@ -80,7 +80,7 @@
     border-bottom: 1px dotted blueviolet;
 }
 
-.single-service button {
+.single-service a {
     background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
     border: none !important;
     padding: .5rem !important;
@@ -88,6 +88,7 @@
     padding-right: 1.4rem !important;
     border-radius: 2rem !important;
     color: #fff !important;
+    text-decoration: none;
 }
 
 /* Oue Service */
@@ -223,7 +224,7 @@
         height: 18rem !important;
     }
 
-    .single-service button {
+    .single-service a {
         font-size: 90% !important;
     }
 

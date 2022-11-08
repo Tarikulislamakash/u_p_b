@@ -70,7 +70,7 @@
                                 </p>
                             </div>
                             <div class="single-service-button">
-                                <button class="me-0">LEARN MORE</button>
+                                <a href="{{ route('bookkeeping') }}" class="me-0">LEARN MORE</a>
                             </div>
                         </div>
                     </div>
@@ -78,32 +78,19 @@
                         <div class="single-service d-flex flex-column align-items-center">
                             <div class="single-service-text">
                                 <h5 class="pb-3 text-center">
-                                    Bookkeeping and Accounting
+                                    CIS Filing
                                 </h5>
                                 <p class="text-center">
-                                    Our certified and qualified accountants
-                                    willhelp youto update your books. Our
-                                    certified and qualified accountants.
+                                    If youare CIS contractor
+                                    and facing issues
+                                    filing your CIS returns?
+                                    Don
+                                    ’t worry our expert
+                                    team will submit CIS for you.
                                 </p>
                             </div>
                             <div class="single-service-button">
-                                <button class="me-0">LEARN MORE</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 swiper-slide g-0">
-                        <div class="single-service d-flex flex-column align-items-center">
-                            <div class="single-service-text">
-                                <h5 class="pb-3 text-center">
-                                    Bookkeeping and Accounting
-                                </h5>
-                                <p class="text-center">
-                                    Our certified and qualified accountants
-                                    willhelp youto update your books.
-                                </p>
-                            </div>
-                            <div class="single-service-button">
-                                <button class="me-0">LEARN MORE</button>
+                                <a href="" class="me-0">LEARN MORE</a>
                             </div>
                         </div>
                     </div>
@@ -119,7 +106,23 @@
                                 </p>
                             </div>
                             <div class="single-service-button">
-                                <button class="me-0">LEARN MORE</button>
+                                <a href="" class="me-0">LEARN MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 swiper-slide g-0">
+                        <div class="single-service d-flex flex-column align-items-center">
+                            <div class="single-service-text">
+                                <h5 class="pb-3 text-center">
+                                    Bookkeeping and Accounting
+                                </h5>
+                                <p class="text-center">
+                                    Our certified and qualified accountants
+                                    willhelp youto update your books.
+                                </p>
+                            </div>
+                            <div class="single-service-button">
+                                <a href="" class="me-0">LEARN MORE</a>
                             </div>
                         </div>
                     </div>
