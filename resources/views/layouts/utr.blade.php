@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-
+@section('title') UTR @endsection
 
 @section('style')
 <!-- Swiper Slide -->

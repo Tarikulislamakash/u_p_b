@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-
+@section('title') SELF @endsection
 
 @section('style')
 <!-- Swiper Slide -->

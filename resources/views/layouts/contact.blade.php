@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-
+@section('title') CONTACT @endsection
 
 @section('style')
 <!-- Swiper Slide -->

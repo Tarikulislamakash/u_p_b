@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-
+@section('title') BOOKKEEPING @endsection
 
 @section('style')
 <!-- Swiper Slide -->

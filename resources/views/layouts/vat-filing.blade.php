@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-
+@section('title') VAT FILING @endsection
 
 @section('style')
 <!-- Swiper Slide -->
