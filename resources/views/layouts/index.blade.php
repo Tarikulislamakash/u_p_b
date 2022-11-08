@@ -98,15 +98,20 @@
                         <div class="single-service d-flex flex-column align-items-center">
                             <div class="single-service-text">
                                 <h5 class="pb-3 text-center">
-                                    Bookkeeping and Accounting
+                                    VAT Filing
                                 </h5>
                                 <p class="text-center">
-                                    Our certified and qualified accountants
-                                    willhelp youto update your books.
+                                    Don
+                                    ’t gethuge penalties
+                                    missing VAT filing deadline,
+                                    our dedicated team will
+                                    follow up and submit
+                                    VAT returns for you.
+
                                 </p>
                             </div>
                             <div class="single-service-button">
-                                <a href="" class="me-0">LEARN MORE</a>
+                                <a href="{{ route('vat-filing') }}" class="me-0">LEARN MORE</a>
                             </div>
                         </div>
                     </div>
