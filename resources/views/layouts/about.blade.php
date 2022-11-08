@@ -39,7 +39,7 @@
 					withour clients.
 				</p>
 
-				<button>find out more</button>
+				<!-- <button>find out more</button> -->
 			</div>
 			<div class="col-md-7 our-journey-right">
 				<img class="img-fluid" src="asset/Group 21990@2x.png" alt="" />
