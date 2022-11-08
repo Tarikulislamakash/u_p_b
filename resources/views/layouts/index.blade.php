@@ -119,15 +119,17 @@
                         <div class="single-service d-flex flex-column align-items-center">
                             <div class="single-service-text">
                                 <h5 class="pb-3 text-center">
-                                    Bookkeeping and Accounting
+                                    Self assessment tax returns
                                 </h5>
                                 <p class="text-center">
-                                    Our certified and qualified accountants
-                                    willhelp youto update your books.
+                                    Just sendus your information
+                                    and Sit back and relax our
+                                    dedicated team will
+                                    submit your tax return for you.
                                 </p>
                             </div>
                             <div class="single-service-button">
-                                <a href="" class="me-0">LEARN MORE</a>
+                                <a href="{{ route('self') }}" class="me-0">LEARN MORE</a>
                             </div>
                         </div>
                     </div>
