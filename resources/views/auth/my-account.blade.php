@@ -18,7 +18,7 @@
 <div class="account">
 	<div class="container">
 		<div class="row d-flex">
-			<div class="col-md-6 account-left">
+			<div class="col-md-5 account-left">
 				<h1 class="pb-2">My Account</h1>
 				<div class="account-form">
 					<h2 class="text-center">Login</h2>
@@ -49,7 +49,7 @@
 					</form>
 				</div>
 			</div>
-			<div class="col-md-6 account-right">
+			<div class="col-md-7 account-right">
 				<img class="img-fluid" src="asset/my account 2x.png" alt="" />
 			</div>
 		</div>

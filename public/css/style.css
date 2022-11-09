@@ -1,4 +1,4 @@
-body{
+body {
     min-height: 100vh;
 }
 
@@ -23,19 +23,22 @@ body{
     color: #fff !important;
 }
 
+.nav-item form button {
+    color: #fff !important;
+}
+
 .bg-light {
     background-color: #fff !important;
 }
 
-.header {
-}
+.header {}
 
 .navbar ul li {
     margin-left: 3rem !important;
     transition: 1s all;
 }
 
-.navbar ul li:first-of-type{
+.navbar ul li:first-of-type {
     /* margin-left: 0rem !important; */
 }
 
@@ -167,7 +170,7 @@ body{
 /* Extra small devices (phones, 320px and down) */
 @media only screen and (min-width: 320px) {
 
-    .navbar-brand{
+    .navbar-brand {
         width: 75% !important;
     }
 
@@ -338,7 +341,7 @@ body{
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 
-    .navbar-brand{
+    .navbar-brand {
         width: 40% !important;
     }
 
@@ -404,7 +407,7 @@ body{
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 
-    .navbar-brand{
+    .navbar-brand {
         width: 32% !important;
     }
 

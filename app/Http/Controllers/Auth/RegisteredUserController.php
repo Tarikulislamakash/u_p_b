@@ -10,7 +10,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules;
-use Spatie\Newsletter\NewsletterFacade as Newsletter;
+use Newsletter;
 
 
 class RegisteredUserController extends Controller
@@ -52,8 +52,8 @@ class RegisteredUserController extends Controller
         Auth::login($user);
 
         // Mailchimp Api Intigration
-        if (!Newsletter::isSubscribed(auth()->user()->email))
-        {
+        if (!Newsletter::isSubscribed(auth()->user()->email)) {
+            // Newsletter::subscribe(auth()->user()->email, ['NAME' => auth()->user()->name, 'NUMBER' => auth()->user()->phone, 'ADDRESS' => auth()->user()->address]);
             Newsletter::subscribe(auth()->user()->email);
         }
         // Mailchimp Api Intigration

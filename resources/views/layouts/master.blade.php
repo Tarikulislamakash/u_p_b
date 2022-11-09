@@ -79,11 +79,11 @@
 									Self
 								</a>
 							</li>
-							<li>
+							<!-- <li>
 								<a class="dropdown-item" style="color:black important!;" href="{{ route('thank-you') }}">
 									Thank You
 								</a>
-							</li>
+							</li> -->
 							<li>
 								<a class="dropdown-item" style="color:black important!;" href="{{ route('utr') }}">
 									UTR
@@ -105,8 +105,8 @@
 						<a class="nav-link" style="color:black important!;" href="{{ route('contact') }}">Contact Us</a>
 					</li>
 					@if( !auth()->user() )
-					<li>
-						<a class="dropdown-item" style="color:black important!;" href="{{ route('register') }}">
+					<li class="nav-item">
+						<a class="nav-link" href="{{ route('register') }}">
 							Register
 						</a>
 					</li>
