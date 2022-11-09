@@ -1,55 +1,60 @@
 /* Header */
-.navbar-nav li a{
+.navbar ul li a {
+    color: #000 !important;
+}
+
+.navbar-nav li a {
     color: #333 !important;
 }
 
-.bg-light{
+.bg-light {
     background-color: #fff !important;
 }
 
-.header ul li{
+.header ul li {
     margin-left: 2.5rem !important;
     transition: 1s all;
 }
 
-.header ul li .dropdown-menu li a{
+.header ul li .dropdown-menu li a {
     padding: 5% !important;
     color: #000 !important;
 }
 
-.header ul li a{
+.header ul li a {
     padding: 0px !important;
     color: #333 !important;
 }
 
 .header ul .active:after,
 .header ul li:hover:after {
-	width: 100%;
-	background: #333;
+    width: 100%;
+    background: #333;
 }
+
 /* Header */
 
 /* register */
-.register{
+.register {
     margin-bottom: 5% !important;
     padding-top: 3rem !important;
 }
 
 .register h1,
-.register p{
+.register p {
     text-align: center !important;
 }
 
-.register p{
+.register p {
     font-size: 115% !important;
     font-weight: 500 !important;
 }
 
-.register form{
+.register form {
     margin-top: 3% !important;
 }
 
-.register .form-control{
+.register .form-control {
     background-color: #DDE1F1 !important;
     border-radius: .8rem !important;
     padding-left: 1.5rem !important;
@@ -58,13 +63,13 @@
     border: .1rem solid #555 !important;
 }
 
-.register label{
+.register label {
     font-size: 105% !important;
     color: #000 !important;
     font-weight: 500;
 }
 
-.register button{
+.register button {
     background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
     border: none !important;
     padding: .4rem !important;
@@ -77,29 +82,28 @@
     margin-bottom: 5% !important;
 }
 
-.register button:focus
-.register button:active
-{
+.register button:focus .register button:active {
     box-shadow: none !important;
     border: none !important;
     outline: none !important;
 }
 
 .register .form-control:active,
-.register .form-control:focus{
+.register .form-control:focus {
     /* outline: none !important;
     border: 0px !important; */
     box-shadow: none !important;
 }
 
-.register form .col-md-6 .row div{
+.register form .col-md-6 .row div {
     margin-top: .5rem !important;
 }
 
-.register .row{
+.register .row {
     display: flex;
     justify-content: center !important;
 }
+
 /* register */
 
 
@@ -108,32 +112,20 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (min-width: 320px) {
 
-    .register{
+    .register {
         border-top: 3px solid #84A2CF !important;
     }
 
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
-}
+@media only screen and (min-width: 600px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
-}
+@media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-
-
-}
+@media only screen and (min-width: 992px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
-
-    
-}
+@media only screen and (min-width: 1200px) {}
