@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\Appointment;
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
@@ -72,37 +74,42 @@ class ProjectController extends Controller
 
     public function appointment(Request $request)
     {
-        $mail = new PHPMailer(true);
+        // $mail = new PHPMailer(true);
 
-        try {
-            //Server settings
-            $mail->SMTPDebug = 1;
-            $mail->isSMTP();
-            $mail->Mailer = 'smtp';
-            $mail->Host       = 'smtp.googlemail.com';
-            $mail->SMTPAuth   = true;
-            $mail->Username   = 'tarikulislamakash@gmail.com';
-            $mail->Password   = 'alcteacgfumbqzbe';
-            $mail->SMTPSecure = 'ssl';
-            $mail->Port       = 465;
-            $mail->setFrom($request->email);
-            $mail->addAddress('tarikulislamakash@gmail.com');
-            $mail->isHTML(true);
-            $mail->Subject = 'Appointment Request';
-            $mail->Body    = 'Appointment Request From<br><b>Name : ' . $request->name . '</b><br>' . '<b>Email : ' . $request->email . '</b><br>' . '<b>Message : ' . $request->message . '</b><br>';
-            $mail->SMTPOptions = array(
-                'ssl' => array(
-                    'verify_peer' => false,
-                    'verify_peer_name' => false,
-                    'allow_self_signed' => true
-                )
-            );
+        // try {
+        //     $mail->SMTPDebug = 1;
+        //     $mail->isSMTP();
+        //     $mail->Mailer = 'smtp';
+        //     $mail->Host       = 'smtp.googlemail.com';
+        //     $mail->SMTPAuth   = true;
+        //     $mail->Username   = 'tarikulislamakash@gmail.com';
+        //     $mail->Password   = 'alcteacgfumbqzbe';
+        //     $mail->SMTPSecure = 'ssl';
+        //     $mail->Port       = 465;
+        //     $mail->setFrom($request->email);
+        //     $mail->addAddress('tarikulislamakash@gmail.com');
+        //     $mail->isHTML(true);
+        //     $mail->Subject = 'Appointment Request';
+        //     $mail->Body    = 'Appointment Request From<br><b>Name : ' . $request->name . '</b><br>' . '<b>Email : ' . $request->email . '</b><br>' . '<b>Message : ' . $request->message . '</b><br>';
+        //     $mail->SMTPOptions = array(
+        //         'ssl' => array(
+        //             'verify_peer' => false,
+        //             'verify_peer_name' => false,
+        //             'allow_self_signed' => true
+        //         )
+        //     );
 
-            $mail->send();
-            return redirect()->back()->with('appointment_success', 'Appointment Request Successfully Send.');
-        } catch (Exception $e) {
-            return redirect()->back()->with('appointment_error', 'Appointment Request Failed.');
-        }
+        //     $mail->send();
+        //     return redirect()->back()->with('appointment_success', 'Appointment Request Successfully Send.');
+        // } catch (Exception $e) {
+        //     return redirect()->back()->with('appointment_error', 'Appointment Request Failed.');
+        // }
+        $name = $request->name;
+        $email = $request->email;
+        $number = $request->number;
+        $message = $request->message;
+        Mail::to('tarikulislamakash@gmail.com')->send(new Appointment($name, $email, $number, $message));
+        return redirect()->back()->with('appointment_success', 'Appointment Request Successfully Send.');
     }
 
 
@@ -122,5 +129,4 @@ class ProjectController extends Controller
     {
         return view('layouts.communication-policy');
     }
-
 }
