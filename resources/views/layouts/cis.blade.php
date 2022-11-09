@@ -70,7 +70,10 @@
 			<div class="col-md-5 service-we-offer-right d-flex justify-content-center">
 				<img class="img-fluid" src="asset/Group 21992@2x.png" alt="" />
 				<div class="offer-form">
-					<form action="">
+					<h4>Quick UTR Number Registration</h4>
+					<h4>Apply For UTR Number Now!</h4>
+					<a class="btn btn-info" href="{{ route('register') }}">Apply Now</a>
+					<!-- <form action="">
 						<h3 class="text-center">Get Your Quote</h3>
 						<form>
 							<div class="mb-3">
@@ -91,7 +94,7 @@
 								</button>
 							</div>
 						</form>
-					</form>
+					</form> -->
 				</div>
 			</div>
 		</div>

@@ -66,6 +66,19 @@
     width: 75% !important;
     position: absolute !important;
     top: 40vh !important;
+    background-color: #AEC8E9;
+    text-align: center;
+    padding: 2rem !important;
+}
+
+.offer-form h4 {
+    margin-bottom: 1rem !important;
+}
+
+.offer-form a {
+    background-color: #4472C7 !important;
+    border: none !important;
+    color: #fff !important;
 }
 
 .service-we-offer-right label {
