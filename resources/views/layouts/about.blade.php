@@ -72,7 +72,7 @@
 		</div>
 
 		<div class="row leadership">
-			<div class="swiper myLeadershipSwiper">
+			<div class="swiper myLeadershipSwiper px-3">
 				<div class="swiper-wrapper">
 					<div class="col-md-4 swiper-slide">
 						<div class="single-leadership py-4 px-4 d-flex flex-column align-items-center border border-primary rounded">
