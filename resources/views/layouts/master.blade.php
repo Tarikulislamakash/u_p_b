@@ -94,11 +94,11 @@
 									Vat Filing
 								</a>
 							</li>
-							<li>
+							<!-- <li>
 								<a class="dropdown-item" style="color:black important!;" href="{{ route('payment') }}">
 									Payment
 								</a>
-							</li>
+							</li> -->
 						</ul>
 					</li>
 					<li class="nav-item">
