@@ -45,7 +45,6 @@
 										<p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;"><b>Name : </b>{{$name}}</p>
 										<p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;"><b>Email : </b>{{$email}}</p>
 										<p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;"><b>Phone Number : </b>{{$number}}</p>
-										<p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;"><b>Mesaage : </b>{{$msg}}</p>
 									</td>
 								</tr>
 							</table>

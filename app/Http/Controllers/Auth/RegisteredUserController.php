@@ -45,6 +45,14 @@ class RegisteredUserController extends Controller
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
+            'phone' => $request->number,
+            'address' => $request->address,
+            'city' => $request->city,
+            'postal_code' => $request->postal_code,
+            'national_insurance' => $request->nationalInsurance,
+            'work_type' => $request->typeOfWork,
+            'start_work_date' => $request->dateStart,
+            'birth_date' => $request->birth,
         ]);
 
         event(new Registered($user));
@@ -52,9 +60,18 @@ class RegisteredUserController extends Controller
         Auth::login($user);
 
         // Mailchimp Api Intigration
+        $auth_user = User::where('email', auth()->user()->email)->first();
+        // dd($auth_user->address);
+        $auth_user_name = $auth_user->name;
+        $auth_user_number = $auth_user->phone;
+        $auth_user_address = $auth_user->address;
+
+
         if (!Newsletter::isSubscribed(auth()->user()->email)) {
-            Newsletter::subscribe(auth()->user()->email, ['NAME' => auth()->user()->name, 'NUMBER' => auth()->user()->phone, 'ADDRESS' => auth()->user()->address]);
+            Newsletter::subscribe(auth()->user()->email, ['NAME' => $auth_user_name, 'NUMBER' => $auth_user_number, 'ADDRESS' => $auth_user_address]);
+            // Newsletter::subscribe(auth()->user()->email, ['NAME' => auth()->user()->name]);
         }
+
         // Mailchimp Api Intigration
 
         return redirect(RouteServiceProvider::HOME);

@@ -21,14 +21,12 @@ class Appointment extends Mailable
     protected $name;
     protected $email;
     protected $number;
-    protected $message;
 
-    public function __construct($name, $email, $number, $message)
+    public function __construct($name, $email, $number)
     {
         $this->name = $name;
         $this->email = $email;
         $this->number = $number;
-        $this->message = $message;
     }
 
     /**
@@ -56,7 +54,6 @@ class Appointment extends Mailable
                 'name' => $this->name,
                 'email' => $this->email,
                 'number' => $this->number,
-                'msg' => $this->message,
             ],
         );
     }

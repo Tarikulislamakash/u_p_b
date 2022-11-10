@@ -71,23 +71,21 @@
 			<div class="col-md-5 service-we-offer-right d-flex justify-content-center">
 				<img class="img-fluid" src="asset/Group 21992@2x.png" alt="" />
 				<div class="offer-form">
-					<h4>Quick UTR Number Registration</h4>
-					<h4>Apply For UTR Number Now!</h4>
-					<a class="btn btn-info" href="{{ route('register') }}">Apply Now</a>
-					<!-- <form action="">
+					{{-- <form action=""> --}}
 						<h3 class="text-center">Get Your Quote</h3>
-						<form>
+						<form method="POST" action="{{ route('appointment') }}">
+                            @csrf
 							<div class="mb-3">
 								<label for="name" class="form-label">Name</label>
-								<input type="text" class="form-control" id="name" aria-describedby="nameHelp" />
+								<input type="text" class="form-control" id="name" name="name" aria-describedby="nameHelp" required/>
 							</div>
 							<div class="mb-3">
 								<label for="email" class="form-label">Email</label>
-								<input type="email" class="form-control" id="email" aria-describedby="emailHelp" />
+								<input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" required/>
 							</div>
 							<div class="mb-3">
 								<label for="number" class="form-label">Number</label>
-								<input type="text" class="form-control" id="number" aria-describedby="numberHelp" />
+								<input type="text" class="form-control" id="number" name="number" aria-describedby="numberHelp" required/>
 							</div>
 							<div class="d-flex justify-content-center mt-4">
 								<button type="submit" class="btn btn-primary fw-bold">
@@ -95,7 +93,7 @@
 								</button>
 							</div>
 						</form>
-					</form> -->
+					{{-- </form> --}}
 				</div>
 			</div>
 		</div>

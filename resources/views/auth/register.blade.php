@@ -82,8 +82,8 @@
 									<input type="text" class="form-control" name="city" id="city" aria-describedby="cityHelp" />
 								</div>
 								<div class="col-md-4">
-									<label for="postal-code" class="form-label">Postal Code</label>
-									<input type="text" class="form-control" name="postal-code" id="postal-code" aria-describedby="postalCodeHelp" />
+									<label for="postal_code" class="form-label">Postal Code</label>
+									<input type="text" class="form-control" name="postal_code" id="postal_code" aria-describedby="postalCodeHelp" />
 								</div>
 							</div>
 						</div>

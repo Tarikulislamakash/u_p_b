@@ -31,9 +31,7 @@
 
 				<h1 class="pb-2">Contact Us</h1>
 				<p>
-					Thank you for your interest in our services. If you
-					have any questions regarding how Crowe Peak can help
-					you, please fill in our contact form.
+					We appreciate your interest in our services. Please fill out our contact form if you have any inquiries about how Frontiers Consulting may assist you.
 				</p>
 			</div>
 			<div class="col-md-7 contact-right">
@@ -54,20 +52,11 @@
 		<div class="row">
 			<div class="col-md-12 visit-office-content">
 				<p class="main-content">
-					Together, we ' re stonger; it’ s more than mere
-					sentiment. AtLawrence Grant, we deliver essential
-					tax planning andfinancial services that bridge
-					physical distances, connect our clients, and moveus
-					all forward into a brighter tomorrow.From your
-					outsourced bookkeeping to international tax planning
-					strategies, our in-depthexpertise and passion for
-					delivering an outstanding client experience at every
-					touchpoint ensure that we ’ re able to bringus
-					together in powerful ways, even when we ’ re far
-					apart.
+					We are stronger when we work together; this is not just feeling. Frontiers Consulting provides crucial financial and tax planning services that cross geographical boundaries, link customers, and propel us all toward a better tomorrow. We're able to forge strong connections between us even when we're far apart because to our in-depth expertise and enthusiasm for delivering an exceptional client experience at every touchpoint, which includes your outsourced accounting and foreign tax planning techniques.
 				</p>
-				<p>123 Two Bits St.</p>
-				<p>Counting, SC 30003</p>
+				<p>118 Pall Mall, London SW1Y 5EA</p>
+				<p>Telephone: 020 8550 0000</p>
+                <p>Email : example@mail.com</p>
 			</div>
 		</div>
 	</div>

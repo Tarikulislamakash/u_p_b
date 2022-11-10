@@ -8,6 +8,7 @@ use App\Mail\Appointment;
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
+use App\Models\Appointment as AppointmentRequest;
 
 
 class ProjectController extends Controller
@@ -107,8 +108,14 @@ class ProjectController extends Controller
         $name = $request->name;
         $email = $request->email;
         $number = $request->number;
-        $message = $request->message;
-        Mail::to('tarikulislamakash@gmail.com')->send(new Appointment($name, $email, $number, $message));
+
+        AppointmentRequest::create([
+            'name' => $name,
+            'email' => $email,
+            'number' => $number,
+        ]);
+
+        Mail::to('tarikulislamakash@gmail.com')->send(new Appointment($name, $email, $number));
         return redirect()->back()->with('appointment_success', 'Appointment Request Successfully Send.');
     }
 
