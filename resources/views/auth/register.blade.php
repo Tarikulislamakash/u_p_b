@@ -32,23 +32,23 @@
 					<div class="row">
 						<div class="col-md-12">
 							<label for="name" class="form-label">Name</label>
-							<input type="text" class="form-control" id="name" name="name" aria-describedby="nameHelp" />
+							<input type="text" class="form-control" id="name" name="name" aria-describedby="nameHelp" required />
 						</div>
 						<div class="col-md-12">
 							<label for="email" class="form-label">Email</label>
-							<input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" />
+							<input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" required />
 						</div>
 						<div class="col-md-12">
 							<label for="password" class="form-label">Password</label>
-							<input type="password" class="form-control" name="password" id="password" aria-describedby="passwordHelp" />
+							<input type="password" class="form-control" name="password" id="password" aria-describedby="passwordHelp" required />
 						</div>
 						<div class="col-md-12">
 							<label for="number" class="form-label">Phone</label>
-							<input type="text" class="form-control" name="number" id="number" aria-describedby="numberHelp" />
+							<input type="text" class="form-control" name="number" id="number" aria-describedby="numberHelp" required />
 						</div>
 						<div class="col-md-12">
 							<label for="address" class="form-label">Address</label>
-							<textarea class="form-control" name="address" id="address" cols="30" rows="3"></textarea>
+							<textarea class="form-control" name="address" id="address" cols="30" rows="3" required></textarea>
 						</div>
 					</div>
 				</div>
@@ -58,32 +58,32 @@
 						<div class="col-md-12">
 							<label for="nationalInsurance" class="form-label">National Insurance
 							</label>
-							<input type="text" class="form-control" id="nationalInsurance" name="nationalInsurance" aria-describedby="nationalInsuranceHelp" />
+							<input type="text" class="form-control" id="nationalInsurance" name="nationalInsurance" aria-describedby="nationalInsuranceHelp" required />
 						</div>
 						<div class="col-md-12">
 							<label for="typeOfWork" class="form-label">Type of Work
 							</label>
-							<input type="text" class="form-control" id="typeOfWork" name="typeOfWork" aria-describedby="typeOfWorkHelp" />
+							<input type="text" class="form-control" id="typeOfWork" name="typeOfWork" aria-describedby="typeOfWorkHelp" required />
 						</div>
 						<div class="col-md-12">
 							<label for="dateStart" class="form-label">Date started working self employed
 							</label>
-							<input type="text" class="form-control" id="dateStart" name="dateStart" aria-describedby="dateStartHelp" />
+							<input type="text" class="form-control" id="dateStart" name="dateStart" aria-describedby="dateStartHelp" required />
 						</div>
 
 						<div class="col-md-12">
 							<div class="row">
 								<div class="col-md-4">
 									<label for="town" class="form-label">Town</label>
-									<input type="text" class="form-control" name="town" id="town" aria-describedby="townHelp" />
+									<input type="text" class="form-control" name="town" id="town" aria-describedby="townHelp" required />
 								</div>
 								<div class="col-md-4">
 									<label for="city" class="form-label">City</label>
-									<input type="text" class="form-control" name="city" id="city" aria-describedby="cityHelp" />
+									<input type="text" class="form-control" name="city" id="city" aria-describedby="cityHelp" required />
 								</div>
 								<div class="col-md-4">
 									<label for="postal_code" class="form-label">Postal Code</label>
-									<input type="text" class="form-control" name="postal_code" id="postal_code" aria-describedby="postalCodeHelp" />
+									<input type="text" class="form-control" name="postal_code" id="postal_code" aria-describedby="postalCodeHelp" required />
 								</div>
 							</div>
 						</div>
@@ -93,7 +93,7 @@
 								<div class="col-md-12">
 									<label for="birth" class="form-label">Date of Birth
 									</label>
-									<input type="text" class="form-control" id="birth" name="birth" aria-describedby="nameHelp" />
+									<input type="text" class="form-control" id="birth" name="birth" aria-describedby="nameHelp" required />
 								</div>
 								<div class="col-md-12">
 									<label for="requiredCIS" class="form-label">Required CIS Registration

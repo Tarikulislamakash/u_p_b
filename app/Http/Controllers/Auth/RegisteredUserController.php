@@ -69,7 +69,6 @@ class RegisteredUserController extends Controller
 
         if (!Newsletter::isSubscribed(auth()->user()->email)) {
             Newsletter::subscribe(auth()->user()->email, ['NAME' => $auth_user_name, 'NUMBER' => $auth_user_number, 'ADDRESS' => $auth_user_address]);
-            // Newsletter::subscribe(auth()->user()->email, ['NAME' => auth()->user()->name]);
         }
 
         // Mailchimp Api Intigration

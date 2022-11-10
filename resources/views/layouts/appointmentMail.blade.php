@@ -33,7 +33,7 @@
 				<table role="presentation" style="width:602px;border-collapse:collapse;border:1px solid #cccccc;border-spacing:0;text-align:left;">
 					<tr>
 						<td align="center" style="padding:40px 0 30px 0;background:#70bbd9;">
-							<img src="https://assets.codepen.io/210284/h1.png" alt="" width="300" style="height:auto;display:block;" />
+							<h1 style="font-size: 300%; font-family: sans-serif; color: #555;">Frontiers Mail</h1>
 						</td>
 					</tr>
 					<tr>
