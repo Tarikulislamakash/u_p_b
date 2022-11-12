@@ -56,7 +56,7 @@
 				</p>
 				<p>118 Pall Mall, London SW1Y 5EA</p>
 				<p>Telephone: 020 8550 0000</p>
-                <p>Email : example@mail.com</p>
+				<p>Email : Frontiers.consulting2021@gmail.com</p>
 			</div>
 		</div>
 	</div>
