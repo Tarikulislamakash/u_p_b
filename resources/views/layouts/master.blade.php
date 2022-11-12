@@ -43,7 +43,6 @@
 
 <body>
 	<!-- Header -->
-	{{-- <div class=""> --}}
 	<nav class="navbar navbar-expand-lg navbar-light">
 		<div class="container">
 			<a class="navbar-brand" href="{{ route('home') }}">
@@ -128,7 +127,6 @@
 			</div>
 		</div>
 	</nav>
-	{{-- </div> --}}
 	<!-- Header -->
 
 

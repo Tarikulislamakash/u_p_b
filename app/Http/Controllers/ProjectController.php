@@ -105,6 +105,18 @@ class ProjectController extends Controller
         // } catch (Exception $e) {
         //     return redirect()->back()->with('appointment_error', 'Appointment Request Failed.');
         // }
+
+        if (str_word_count($request->name) < 2)
+        {
+            return redirect()->back()->with('word_count_err', "Name can't be single word.");
+        }
+
+        $validated = $request->validate([
+            'email' => 'required|email:rfc',
+            'name' => 'required',
+            'number' => 'required|integer|max:10|min:3',
+        ]);
+
         $name = $request->name;
         $email = $request->email;
         $number = $request->number;

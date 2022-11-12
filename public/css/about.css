@@ -129,6 +129,13 @@
     }
     /* leadership */
 
+    .swiper{
+        padding-bottom: 8% !important;
+    }
+    .swiper-pagination{
+        bottom: 0% !important;
+    }
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -152,7 +159,18 @@
     .our-journey-left button{
         font-size: 100% !important;
     }
+
+    .single-leadership{
+        height: 85% !important;
+    }
     /* Our Journey */
+
+    .swiper{
+        padding-bottom: 5% !important;
+    }
+    .swiper-pagination{
+        /* bottom: 0% !important; */
+    }
 
 }
 
@@ -195,7 +213,15 @@
     .established-leadership h1{
         font-size: 180% !important;
     }
+
+    .single-leadership{
+        height: 75% !important;
+    }
     /* leadership */
+
+    .swiper{
+        padding-bottom: 0% !important;
+    }
 
 }
 
@@ -241,6 +267,10 @@
 
     .established-leadership h1{
         font-size: 200% !important;
+    }
+
+    .single-leadership{
+        height: auto !important;
     }
     /* leadership */
 
