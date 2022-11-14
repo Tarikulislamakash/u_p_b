@@ -129,7 +129,7 @@
 
     /* CIS Return */
     .vat-filing-right {
-        top: 18vw !important;
+        top: 28vw !important;
     }
 
     .vat-filing-right img {
@@ -211,6 +211,10 @@
     /* CIS Return */
     .vat-filing {
         margin-bottom: 12% !important;
+    }
+
+    .vat-filing-right {
+        top: 18vw !important;
     }
 
     .vat-filing-left h1 {
