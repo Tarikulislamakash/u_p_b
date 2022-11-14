@@ -118,7 +118,7 @@
 
     /* CIS Return */
     .self-right {
-        top: 18vw !important;
+        top: 28vw !important;
     }
 
     .self-right img {
@@ -194,6 +194,10 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 500px) {
+
+    .self-right {
+        top: 18vw !important;
+    }
 
     /* CIS Return */
     .self {
