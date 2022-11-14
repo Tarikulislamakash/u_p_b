@@ -237,8 +237,12 @@
         margin-top: 0px !important;
     }
 
+    .self-right {
+        top: 0 !important;
+    }
+
     .self-right img {
-        width: 80% !important;
+        width: 100% !important;
     }
 
     .self-left {

@@ -249,8 +249,12 @@
 @media only screen and (min-width: 768px) {
 
     /* CIS Return */
+    .cis-return-right {
+        top: 0 !important;
+    }
+
     .cis-return-right img {
-        width: 80% !important;
+        width: 100% !important;
     }
 
     .cis-return-left {

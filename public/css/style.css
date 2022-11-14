@@ -3,7 +3,7 @@ body {
 }
 
 /* Header */
-.header {
+/* .header {
     height: 15vw !important;
     display: flex;
     align-items: center;
@@ -39,7 +39,6 @@ body {
 }
 
 .navbar ul li:first-of-type {
-    /* margin-left: 0rem !important; */
 }
 
 .navbar ul li a {
@@ -67,7 +66,6 @@ body {
 
 
 
-/* .header ul .active:after, */
 .header ul li:after {
     content: '';
     display: block;
@@ -82,7 +80,7 @@ body {
 .header ul li:hover:after {
     width: 100%;
     background: #fff;
-}
+} */
 
 /* Header */
 
@@ -183,11 +181,15 @@ body {
         z-index: 99999999999999999;
     }
 
-    .navbar-brand {
-        width: 75% !important;
+    .navbar .logo {
+        width: 40% !important;
     }
 
-    .navbar ul li a {
+    .navbar .logo img {
+        width: 100% !important;
+    }
+
+    /* .navbar ul li a {
         padding: 0px !important;
         color: #000 !important;
     }
@@ -195,11 +197,7 @@ body {
     .navbar ul li .dropdown-menu {
         padding-top: 0px !important;
         padding-bottom: 0px !important;
-    }
-
-    .navbar-brand img {
-        width: 50% !important;
-    }
+    } */
 
     .footer-right {
         display: flex !important;
@@ -259,17 +257,21 @@ body {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 500px) {
 
-    .navbar-collapse {
+    /* .navbar-collapse {
         background-color: transparent;
     }
 
     .dropdown-menu {
         background-color: #fff;
         border: 1px solid #333;
+    } */
+
+    .navbar .logo {
+        width: 45% !important;
     }
 
-    .navbar-brand img {
-        width: 50% !important;
+    .navbar .logo img {
+        /* width: 40% !important; */
     }
 
     /* Contact Us */
@@ -320,12 +322,21 @@ body {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 
-    .header {
+    /* .header {
         height: 12vw !important;
     }
+    */
 
-    .navbar-brand img {
-        width: 70% !important;
+    .navbar .logo {
+        width: 30% !important;
+    }
+
+    .navbar .logo img {
+        /* width: 40% !important; */
+    }
+
+    .menu li {
+        padding: 5px 6px;
     }
 
     .contact-us-right img {
@@ -363,11 +374,15 @@ body {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 
-    .navbar-brand {
+    .navbar .logo {
         width: 40% !important;
     }
 
-    .navbar ul li {
+    .navbar .logo img {
+        width: 90% !important;
+    }
+
+    /* .navbar ul li {
         margin-left: 2rem !important;
     }
 
@@ -381,13 +396,9 @@ body {
         padding-bottom: 2% !important;
     }
 
-    .navbar-brand img {
-        width: 90% !important;
-    }
-
     .header ul li {
         margin-left: 2rem !important;
-    }
+    } */
 
     .contact-us {
         margin-top: 10% !important;
@@ -429,18 +440,26 @@ body {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 
-    .navbar-brand {
-        width: 32% !important;
+    .navbar .logo {
+        /* width: 32% !important; */
     }
 
-    .navbar ul li {
+    .navbar .logo img {
+        width: 70% !important;
+    }
+
+    .menu li {
+        padding: 5px 20px;
+    }
+
+    /* .navbar ul li {
         margin-left: 3rem !important;
         transition: 1s all;
     }
 
     .header ul li {
         margin-left: 3rem !important;
-    }
+    } */
 
     .footer {
         padding-top: 2rem !important;
@@ -459,12 +478,16 @@ body {
 /* Extra large devices (large laptops and desktops, 1500px and up) */
 @media only screen and (min-width: 1500px) {
 
-    .header ul li .dropdown-menu li a {
+    /* .header ul li .dropdown-menu li a {
         padding: 8% !important;
     }
 
     .header ul li {
         margin-left: 5rem !important;
+    } */
+
+    .navbar .logo img {
+        width: 60% !important;
     }
 
     .contact-us {

@@ -258,8 +258,12 @@
         margin-top: 0px !important;
     }
 
+    .utr-right {
+        top: 0 !important;
+    }
+
     .utr-right img {
-        width: 80% !important;
+        width: 100% !important;
     }
 
     .utr-left {

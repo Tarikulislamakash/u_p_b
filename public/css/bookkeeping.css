@@ -238,8 +238,12 @@
         margin-top: 0px !important;
     }
 
+    .book-keeping-right {
+        top: 0vw !important;
+    }
+
     .book-keeping-right img {
-        width: 80% !important;
+        width: 100% !important;
     }
 
     .book-keeping-left {

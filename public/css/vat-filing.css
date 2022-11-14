@@ -254,8 +254,12 @@
         margin-top: 0px !important;
     }
 
+    .vat-filing-right {
+        top: 0 !important;
+    }
+
     .vat-filing-right img {
-        width: 80% !important;
+        width: 100% !important;
     }
 
     .vat-filing-left {

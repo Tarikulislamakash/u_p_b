@@ -242,8 +242,12 @@
 @media only screen and (min-width: 768px) {
 
     /* Contact */
+    .contact-right {
+        top: 0 !important;
+    }
+
     .contact-right img {
-        width: 53vw !important;
+        width: 100% !important;
         height: 50vw !important;
     }
 
