@@ -23,6 +23,10 @@
 	@yield('style')
 
 	<style>
+		ul {
+			margin-bottom: 0 !important;
+		}
+
 		a {
 			text-decoration: none;
 		}

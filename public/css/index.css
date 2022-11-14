@@ -163,7 +163,7 @@
 
     /* Who We Are */
     .whoAreWe-right {
-        top: 18vw !important;
+        top: 28vw !important;
     }
 
     .whoAreWe-right img {
@@ -275,7 +275,7 @@
 @media only screen and (min-width: 500px) {
 
     .whoAreWe-right {
-        top: 18vw !important;
+        top: 20vw !important;
     }
 
     .whoAreWe-right img {
