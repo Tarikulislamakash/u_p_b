@@ -125,7 +125,7 @@
         padding-bottom: .3rem !important;
     }
 
-    .account-left button{
+    .account-left button {
         padding: .3rem !important;
         padding-left: 2rem !important;
         padding-right: 2rem !important;
@@ -166,6 +166,10 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 
+    .nav-links a {
+        color: #333 !important;
+    }
+
     /* Account */
     .account {
         margin-bottom: 15% !important;
@@ -181,7 +185,7 @@
         font-size: 180% !important;
     }
 
-    .account-left button{
+    .account-left button {
         padding: .4rem !important;
         padding-left: 3rem !important;
         padding-right: 3rem !important;
@@ -194,6 +198,10 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+
+    .nav-links a {
+        color: #fff !important;
+    }
 
     /* Account */
     .account {
@@ -239,7 +247,7 @@
         padding-bottom: .3rem !important;
     }
 
-    .service-we-offer-right button{
+    .service-we-offer-right button {
         padding: .3rem !important;
         padding-left: 2rem !important;
         padding-right: 2rem !important;
@@ -253,7 +261,7 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 
-    .account{
+    .account {
         margin-bottom: 12vw !important;
     }
 
@@ -264,7 +272,7 @@
 /* Extra large devices (large laptops and desktops, 1500px and up) */
 @media only screen and (min-width: 1500px) {
 
-    .contact-us{
+    .contact-us {
         margin-top: 8vw !important;
     }
 
@@ -277,11 +285,11 @@
 /* Extra large devices (large laptops and desktops, 1800px and up) */
 @media only screen and (min-width: 1800px) {
 
-    .account{
+    .account {
         margin-bottom: 0vw !important;
     }
 
-    .contact-us{
+    .contact-us {
         margin-top: 12vw !important;
     }
 
