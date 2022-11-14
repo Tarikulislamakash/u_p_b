@@ -123,7 +123,7 @@
 
     /* CIS Return */
     .cis-return-right {
-        top: 16vw !important;
+        top: 28vw !important;
     }
 
     .cis-return-right img {
@@ -199,6 +199,10 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 500px) {
+
+    .cis-return-right {
+        top: 18vw !important;
+    }
 
     /* CIS Return */
     .cis-return-left h1 {
