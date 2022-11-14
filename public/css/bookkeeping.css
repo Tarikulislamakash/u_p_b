@@ -119,7 +119,7 @@
 
     /* CIS Return */
     .book-keeping-right {
-        top: 18vw !important;
+        top: 28vw !important;
     }
 
     .book-keeping-right img {
@@ -199,6 +199,10 @@
     /* CIS Return */
     .book-keeping {
         margin-bottom: 12% !important;
+    }
+
+    .book-keeping-right {
+        top: 18vw !important;
     }
 
     .book-keeping-left h2 {
