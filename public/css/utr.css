@@ -130,7 +130,7 @@
 
     /* UTR */
     .utr-right {
-        top: 18vw !important;
+        top: 28vw !important;
     }
 
     .utr-right img {
@@ -215,6 +215,10 @@
     /* UTR */
     .utr {
         margin-bottom: 12% !important;
+    }
+
+    .utr-right {
+        top: 18vw !important;
     }
 
     .utr-left h1 {
