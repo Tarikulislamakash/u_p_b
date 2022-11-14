@@ -160,7 +160,7 @@
 				padding: 16px 20px;
 				top: 100% !important;
 				border-top: 1px solid #777;
-				height: 60vh !important;
+				height: 65vh !important;
 			}
 
 			.menu li:hover {
