@@ -61,8 +61,6 @@
         align-items: center;
         justify-content: space-between;
         padding: 20px 0px;
-        /* background-color: transparent; */
-        /* background-color: #93b8f5; */
         color: #fff;
         }
 
@@ -89,17 +87,15 @@
         transition: 0.3s ease;
         }
         .menu li {
-        /* padding: 5px 10px; */
         }
         /* DROPDOWN MENU */
         .services {
         position: relative;
         }
         .dropdown {
-        /* background-color: rgb(1, 139, 139); */
         background-color: #93b8f5;
         padding: 0;
-        position: absolute; /*WITH RESPECT TO PARENT*/
+        position: absolute;
         display: none;
         border-radius: 8px;
         top: 35px;
@@ -109,8 +105,6 @@
         margin-top: 10px;
         }
         .dropdown li {
-        /* padding: 0em; */
-        /* width: 8em; */
         text-align: center;
         margin-left: 0px !important;
         }
@@ -204,94 +198,7 @@
 </head>
 
 <body>
-	<!-- Header -->
-	{{-- <nav class="navbar navbar-expand-lg navbar-light">
-		<div class="container">
-			<a class="navbar-brand" href="{{ route('home') }}">
-				<img src="asset/Group 21821.png" alt="" />
-			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav ms-auto">
-					<li class="nav-item active">
-						<a class="nav-link" style="color:black important!;" href="{{ route('home') }}">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" style="color:black important!;" href="{{ route('about') }}">About</a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" style="color:black important!;" href="#" data-bs-toggle="dropdown">
-							Service
-						</a>
-						<ul class="dropdown-menu">
-							<li>
-								<a class="dropdown-item" style="color:black important!;" href="{{ route('bookkeeping') }}">
-									Book Keeping</a>
-							</li>
-							<li>
-								<a class="dropdown-item" style="color:black important!;" href="{{ route('cis') }}">
-									CIS
-								</a>
-							</li>
-							<li>
-								<a class="dropdown-item" style="color:black important!;" href="{{ route('self') }}">
-									Self
-								</a>
-							</li>
-							<!-- <li>
-								<a class="dropdown-item" style="color:black important!;" href="{{ route('thank-you') }}">
-									Thank You
-								</a>
-							</li> -->
-							<li>
-								<a class="dropdown-item" style="color:black important!;" href="{{ route('utr') }}">
-									UTR
-								</a>
-							</li>
-							<li>
-								<a class="dropdown-item" style="color:black important!;" href="{{ route('vat-filing') }}">
-									Vat Filing
-								</a>
-							</li>
-							<!-- <li>
-								<a class="dropdown-item" style="color:black important!;" href="{{ route('payment') }}">
-									Payment
-								</a>
-							</li> -->
-						</ul>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" style="color:black important!;" href="{{ route('contact') }}">Contact Us</a>
-					</li>
-					@if( !auth()->user() )
-					<li class="nav-item">
-						<a class="nav-link" href="{{ route('register') }}">
-							Register
-						</a>
-					</li>
-					@endif
-					@if( !auth()->user() )
-					<li class="nav-item">
-						<a class="nav-link" style="color:black important!;" href="{{ route('login') }}">Login</a>
-					</li>
-					@else
-					<li class="nav-item">
-						<form method="POST" action="{{ route('logout') }}">
-							@csrf
 
-							<button style="border: none !important; background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;" type="submit">Logout</button>
-						</form>
-					</li>
-					@endif
-				</ul>
-			</div>
-		</div>
-	</nav> --}}
-	<!-- Header -->
-
-    <!-- Navigation bar -->
     <div class="container">
     <nav class="navbar">
 
@@ -318,9 +225,6 @@
               </ul>
             </li>
             <li><a href="{{ route('contact') }}">Contact Us</a></li>
-            {{-- @if( !auth()->user() )
-            <li><a href="{{ route('register') }}">Register</a></li>
-            @endif --}}
             @if( !auth()->user() )
                 <li><a href="{{ route('login') }}">Login</a></li>
             @else
@@ -334,8 +238,6 @@
             @endif
           </div>
         </ul>
-
-
     </nav>
     </div>
 
