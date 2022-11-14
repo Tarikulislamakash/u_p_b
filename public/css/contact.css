@@ -118,7 +118,7 @@
 
     /* Contact */
     .contact-right {
-        top: 18vw !important;
+        top: 28vw !important;
     }
 
     .contact-right img {
@@ -188,6 +188,10 @@
     /* Contact */
     .contact {
         /* margin-bottom: 20% !important; */
+    }
+
+    .contact-right {
+        top: 18vw !important;
     }
 
     .contact-right img {
@@ -355,7 +359,4 @@
 
 
 /* Extra large devices (large laptops and desktops, 1800px and up) */
-@media only screen and (min-width: 1800px) {
-
-
-}
+@media only screen and (min-width: 1800px) {}
