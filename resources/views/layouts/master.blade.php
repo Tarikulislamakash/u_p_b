@@ -23,223 +23,239 @@
 	@yield('style')
 
 	<style>
-		@media all and (min-width: 992px) {
-			/* .navbar .nav-item .dropdown-menu {
+		a {
+			text-decoration: none;
+		}
+
+		li {
+			list-style: none;
+		}
+
+		/* NAVBAR STYLING STARTS */
+		.navbar {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 20px 0px;
+			color: #fff;
+		}
+
+		.nav-links a {
+			color: #fff;
+		}
+
+		.nav-links {
+			/* margin-bottom: 0px !important;
+			padding-left: 0px !important; */
+		}
+
+		/* LOGO */
+		.logo {
+			font-size: 32px;
+		}
+
+		/* NAVBAR MENU */
+		.menu {
+			display: flex;
+			/* gap: 1em; */
+			font-size: 18px;
+		}
+
+		.menu>li {
+			margin-left: 1.4rem;
+		}
+
+		.menu li:hover {
+			transition: 0.3s ease;
+		}
+
+		.menu li {}
+
+		/* DROPDOWN MENU */
+		.services {
+			position: relative;
+		}
+
+		.dropdown {
+			background-color: #93b8f5;
+			padding: 0;
+			position: absolute;
+			display: none;
+			border-radius: 8px;
+			top: 2rem;
+			width: 10rem;
+		}
+
+		.dropdown li {
+			margin-top: 0px;
+			padding-bottom: .5rem;
+			padding-top: .5rem;
+			padding-left: 0;
+			text-align: left;
+		}
+
+		.dropdown li a {
+			color: #fff !important;
+			padding-bottom: 1rem;
+			padding-top: 1rem;
+			padding-left: 1rem;
+		}
+
+		.dropdown li:hover {
+			background-color: #999;
+		}
+
+		.services:hover .dropdown {
+			display: block;
+		}
+
+		/*RESPONSIVE NAVBAR MENU STARTS*/
+		/* CHECKBOX HACK */
+		input[type=checkbox] {
+			display: none;
+		}
+
+		/*HAMBURGER MENU*/
+		.hamburger {
+			display: none;
+			font-size: 24px;
+			user-select: none;
+			color: #333 !important;
+		}
+
+		.navbar ul li:after {
+			/* content: '';
+			display: block;
+			margin: auto;
+			height: 1px;
+			width: 0px;
+			background: transparent;
+			transition: width .5s ease, background-color .5s ease; */
+		}
+
+		.navbar ul .active:after,
+		.navbar ul li:hover:after {
+			/* width: 100%; */
+			/* background: #fff; */
+		}
+
+		.navbar ul .dropdown li:hover:after {
+			/* width: 0px; */
+			/* background: #fff; */
+		}
+
+		/* APPLYING MEDIA QUERIES */
+		@media (max-width: 768px) {
+			.menu {
 				display: none;
+				position: absolute;
+				background-color: #93b8f5;
+				right: 0;
+				left: 0;
+				text-align: left;
+				padding: 16px 20px;
+				top: 100% !important;
+				border-top: 1px solid #777;
+				height: 60vh !important;
 			}
 
-			.navbar .nav-item:hover .nav-link {}
+			.menu li:hover {
+				display: inline-block;
+				background-color: #93b8f5;
+				transition: 0.3s ease;
+			}
 
-			.navbar .nav-item:hover .dropdown-menu {
+			.menu li+li {
+				margin-top: 12px;
+			}
+
+			.dropdown li+li {
+				margin-top: 0px;
+			}
+
+			input[type=checkbox]:checked~.menu {
 				display: block;
 			}
 
-			.navbar .nav-item .dropdown-menu {
-				margin-top: 0;
-			} */
+			.hamburger {
+				display: block;
+			}
+
+			.dropdown {
+				left: 0%;
+				top: 100%;
+				/* transform: translateX(35%); */
+				border: 1px solid #fff;
+			}
+
+			.dropdown li:hover {
+				background-color: #93b8f5;
+			}
+
+			.menu li:hover .dropdown,
+			.menu li:hover .dropdown li {
+				background-color: #fff !important;
+			}
+
+			.menu li:hover .dropdown li a {
+				color: #333 !important;
+			}
+
+			.menu li .dropdown li:hover a {
+				color: #93b8f5 !important;
+			}
 		}
-        /* ================================================ */
-        /* UTILITIES */
-        * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        }
-        body {
-        font-family: cursive;
-        }
-        a {
-        text-decoration: none;
-        }
-        li {
-        list-style: none;
-        }
 
-        /* NAVBAR STYLING STARTS */
-        .navbar {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 20px 0px;
-        color: #fff;
-        }
-
-        .nav-links a {
-        color: #fff;
-        }
-
-        .nav-links{
-            margin-bottom: 0px !important;
-            padding-left: 0px !important;
-        }
-
-        /* LOGO */
-        .logo {
-        font-size: 32px;
-        }
-        /* NAVBAR MENU */
-        .menu {
-        display: flex;
-        gap: 1em;
-        font-size: 18px;
-        }
-        .menu li:hover {
-        transition: 0.3s ease;
-        }
-        .menu li {
-        }
-        /* DROPDOWN MENU */
-        .services {
-        position: relative;
-        }
-        .dropdown {
-        background-color: #93b8f5;
-        padding: 0;
-        position: absolute;
-        display: none;
-        border-radius: 8px;
-        top: 35px;
-        width: 10rem;
-        }
-        .dropdown li + li {
-        margin-top: 10px;
-        }
-        .dropdown li {
-        text-align: center;
-        margin-left: 0px !important;
-        }
-
-        .dropdown li a{
-            padding-top: 2rem !important;
-            padding-bottom: 2rem !important;
-            color: #fff !important;
-        }
-
-        .dropdown li:hover {
-        background-color: #999;
-        }
-        .services:hover .dropdown {
-        display: block;
-        }
-
-        /*RESPONSIVE NAVBAR MENU STARTS*/
-        /* CHECKBOX HACK */
-        input[type=checkbox]{
-        display: none;
-        }
-        /*HAMBURGER MENU*/
-        .hamburger {
-        display: none;
-        font-size: 24px;
-        user-select: none;
-        color: #333 !important;
-        }
-
-        .navbar ul li:after {
-            content: '';
-            display: block;
-            margin: auto;
-            height: 1px;
-            width: 0px;
-            background: transparent;
-            transition: width .5s ease, background-color .5s ease;
-        }
-
-        .navbar ul .active:after,
-        .navbar ul li:hover:after {
-            width: 100%;
-            background: #fff;
-        }
-
-        .navbar ul .dropdown li:hover:after {
-            width: 0px;
-            background: #fff;
-        }
-        /* APPLYING MEDIA QUERIES */
-        @media (max-width: 768px) {
-        .menu {
-        display:none;
-        position: absolute;
-        background-color:#93b8f5;
-        right: 0;
-        left: 0;
-        text-align: left;
-        padding: 16px 20px;
-        top: 100% !important;
-        border-top: 1px solid #777;
-        height: 50vh !important;
-        }
-        .menu li:hover {
-        display: inline-block;
-        background-color:#93b8f5;
-        transition: 0.3s ease;
-        }
-        .menu li + li {
-        margin-top: 12px;
-        }
-        input[type=checkbox]:checked ~ .menu{
-        display: block;
-        }
-        .hamburger {
-        display: block;
-        }
-        .dropdown {
-            left: 70%;
-            top: 25%;
-            transform: translateX(35%);
-            border: 1px solid #fff;
-        }
-        .dropdown li:hover {
-        background-color: #93b8f5;
-        }
-        }
-        /* ================================================ */
+		/* ================================================ */
 	</style>
 </head>
 
 <body>
 
-    <div class="container">
-    <nav class="navbar">
+	<div class="container">
+		<nav class="navbar">
 
-        <div class="logo">
-            <a href="{{ route('home') }}">
-				<img src="asset/Group 21821.png" alt="" />
-			</a>
-        </div>
+			<div class="logo">
+				<a href="{{ route('home') }}">
+					<img src="asset/Group 21821.png" alt="" />
+				</a>
+			</div>
 
-        <ul class="nav-links">
-          <input type="checkbox" id="checkbox_toggle" />
-          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-          <div class="menu">
-            <li><a href="{{ route('home') }}">Home</a></li>
-            <li><a href="{{ route('about') }}">About</a></li>
-            <li class="services">
-              <a href="#">Service</a>
-              <ul class="dropdown">
-                <li><a href="{{ route('bookkeeping') }}">Book Keeping</a></li>
-                <li><a href="{{ route('cis') }}">CIS</a></li>
-                <li><a href="{{ route('self') }}">Self</a></li>
-                <li><a href="{{ route('utr') }}">UTR</a></li>
-                <li><a href="{{ route('vat-filing') }}">Vat Filing</a></li>
-              </ul>
-            </li>
-            <li><a href="{{ route('contact') }}">Contact Us</a></li>
-            @if( !auth()->user() )
-                <li><a href="{{ route('login') }}">Login</a></li>
-            @else
-            <li>
-                <form method="POST" action="{{ route('logout') }}">
-                    @csrf
+			<ul class="nav-links">
+				<input type="checkbox" id="checkbox_toggle" />
+				<label for="checkbox_toggle" class="hamburger">&#9776;</label>
+				<div class="menu">
+					<li><a href="{{ route('home') }}">Home</a></li>
+					<li><a href="{{ route('about') }}">About</a></li>
+					<li class="services">
+						<a href="#">
+							Service
+							<i class="fa fa-angle-down"></i>
+						</a>
+						<ul class="dropdown">
+							<li><a href="{{ route('bookkeeping') }}">Book Keeping</a></li>
+							<li><a href="{{ route('cis') }}">CIS</a></li>
+							<li><a href="{{ route('self') }}">Self</a></li>
+							<li><a href="{{ route('utr') }}">UTR</a></li>
+							<li><a href="{{ route('vat-filing') }}">Vat Filing</a></li>
+						</ul>
+					</li>
+					<li><a href="{{ route('contact') }}">Contact Us</a></li>
+					@if( !auth()->user() )
+					<li><a href="{{ route('login') }}">Login</a></li>
+					@else
+					<li>
+						<form method="POST" action="{{ route('logout') }}">
+							@csrf
 
-                    <button style="border: none !important; background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;" type="submit">Logout</button>
-                </form>
-            </li>
-            @endif
-          </div>
-        </ul>
-    </nav>
-    </div>
+							<button style="border: none !important; background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;" type="submit">Logout</button>
+						</form>
+					</li>
+					@endif
+				</div>
+			</ul>
+		</nav>
+	</div>
 
 
 

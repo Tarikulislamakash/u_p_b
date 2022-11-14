@@ -256,10 +256,6 @@ body {
         /* width: 40% !important; */
     }
 
-    .menu li {
-        padding: 5px 6px;
-    }
-
     .contact-us-right img {
         width: 100% !important;
     }
@@ -367,10 +363,6 @@ body {
 
     .navbar .logo img {
         width: 70% !important;
-    }
-
-    .menu li {
-        padding: 5px 20px;
     }
 
     /* .navbar ul li {
