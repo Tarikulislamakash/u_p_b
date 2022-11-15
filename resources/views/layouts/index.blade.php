@@ -194,7 +194,7 @@
                         <textarea class="form-control" name="message" id="message" rows="3" value="{{ old('message') }}" required></textarea>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="agreeTerms" name="agreeTerms" required>
+                        <input class="form-check-input" type="checkbox" value="" id="agreeTerms" name="agreeTerms">
                         <label class="form-check-label" for="agreeTerms">
                             I Agree Terms & Coditions
                         </label>
