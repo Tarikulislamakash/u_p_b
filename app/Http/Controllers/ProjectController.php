@@ -77,43 +77,14 @@ class ProjectController extends Controller
 
     public function appointment(Request $request)
     {
-        // $mail = new PHPMailer(true);
 
-        // try {
-        //     $mail->SMTPDebug = 1;
-        //     $mail->isSMTP();
-        //     $mail->Mailer = 'smtp';
-        //     $mail->Host       = 'smtp.googlemail.com';
-        //     $mail->SMTPAuth   = true;
-        //     $mail->Username   = 'tarikulislamakash@gmail.com';
-        //     $mail->Password   = 'alcteacgfumbqzbe';
-        //     $mail->SMTPSecure = 'ssl';
-        //     $mail->Port       = 465;
-        //     $mail->setFrom($request->email);
-        //     $mail->addAddress('tarikulislamakash@gmail.com');
-        //     $mail->isHTML(true);
-        //     $mail->Subject = 'Appointment Request';
-        //     $mail->Body    = 'Appointment Request From<br><b>Name : ' . $request->name . '</b><br>' . '<b>Email : ' . $request->email . '</b><br>' . '<b>Message : ' . $request->message . '</b><br>';
-        //     $mail->SMTPOptions = array(
-        //         'ssl' => array(
-        //             'verify_peer' => false,
-        //             'verify_peer_name' => false,
-        //             'allow_self_signed' => true
-        //         )
-        //     );
+        if (str_word_count($request->name) < 2) {
+            return redirect(url()->previous() . '#book-appointment')->with('word_count_err', "Name can't be single word.")->withInput();
+        }
 
-        //     $mail->send();
-        //     return redirect()->back()->with('appointment_success', 'Appointment Request Successfully Send.');
-        // } catch (Exception $e) {
-        //     return redirect()->back()->with('appointment_error', 'Appointment Request Failed.');
-        // }
 
-        if (str_word_count($request->name) < 2)
-        {
-            // return redirect()->to('/link address'.'/#contact')
-            // return redirect(route('name').'/#contact')
-            return redirect(url()->previous().'#book-appointment')->with('word_count_err', "Name can't be single word.")->withInput();
-            // return redirect()->back()->with('word_count_err', "Name can't be single word.");
+        if (strlen($request->number) > 10) {
+            return redirect(url()->previous() . '#book-appointment')->with('number_range', "Number can't be more than 10 digits.")->withInput();
         }
 
 
@@ -121,22 +92,14 @@ class ProjectController extends Controller
         $validator = Validator::make($request->all(), [
             'email' => 'required|email:rfc',
             'name' => 'required',
-            'number' => 'required|max:10|min:3',
         ]);
 
         if ($validator->fails()) {
-            return redirect(url()->previous().'#book-appointment')
-                        ->withErrors($validator)
-                        ->withInput();
+            return redirect(url()->previous() . '#book-appointment')
+                ->withErrors($validator)
+                ->withInput();
         }
 
-
-
-        // $validated = $request->validate([
-        //     'email' => 'required|email:rfc',
-        //     'name' => 'required',
-        //     'number' => 'required|max:10|min:3',
-        // ]);
 
         $name = $request->name;
         $email = $request->email;

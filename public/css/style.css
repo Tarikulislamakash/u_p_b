@@ -6,6 +6,7 @@ body {
 .menu>li {
     margin-left: 1.4rem;
 }
+
 /* Header */
 
 
@@ -433,5 +434,22 @@ body {
 
     .contact-us {
         margin-top: 14% !important;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 767px) {
+    .navbar .logo img {
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
+
+@media only screen and (max-width: 499px) {
+    .navbar .logo img {
+        left: 25vw;
+        transform: translate(-25vw);
     }
 }

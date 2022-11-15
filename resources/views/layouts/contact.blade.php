@@ -64,7 +64,7 @@
 <!-- Visit Our Office -->
 
 <!-- Book Appointment -->
-<div class="book-appointment">
+<div class="book-appointment" id="book-appointment">
 	<div class="container">
 		<div class="row">
 
@@ -84,14 +84,29 @@
 					<div class="mb-3">
 						<label for="name" class="form-label">Name</label>
 						<input type="text" class="form-control" name="name" id="name" aria-describedby="nameHelp" value="{{ old('name') }}" required />
+						@error('name')
+						<div class="alert alert-danger mt-2">{{ $message }}</div>
+						@enderror
+						@if (session::has('word_count_err'))
+						<div class="alert alert-danger mt-2">{{ session::get('word_count_err') }}</div>
+						@endif
 					</div>
 					<div class="mb-3">
 						<label for="email" class="form-label">Email</label>
 						<input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" value="{{ old('email') }}" required />
+						@error('email')
+						<div class="alert alert-danger mt-2">{{ $message }}</div>
+						@enderror
 					</div>
 					<div class="mb-3">
 						<label for="number" class="form-label">Number</label>
 						<input type="text" class="form-control" name="number" id="number" aria-describedby="numberHelp" value="{{ old('number') }}" required />
+						@error('number')
+						<div class="alert alert-danger mt-2">{{ $message }}</div>
+						@enderror
+						@if (session::has('number_range'))
+						<div class="alert alert-danger mt-2">{{ session::get('number_range') }}</div>
+						@endif
 					</div>
 					<div class="mb-3">
 						<label for="message" class="form-label">Message</label>

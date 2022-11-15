@@ -1,3 +1,7 @@
+.appointment-right input[type=checkbox] {
+    display: inline-block !important;
+}
+
 /* Contact */
 .contact {
     margin-bottom: 15% !important;
@@ -191,7 +195,7 @@
     }
 
     .contact-right {
-        top: 18vw !important;
+        top: 20vw !important;
     }
 
     .contact-right img {

@@ -166,6 +166,10 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 
+    .bxs-chevron-down {
+        color: #333 !important;
+    }
+
     .nav-links a {
         color: #333 !important;
     }
@@ -198,6 +202,10 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+
+    .bxs-chevron-down {
+        color: #fff !important;
+    }
 
     .nav-links a {
         color: #fff !important;

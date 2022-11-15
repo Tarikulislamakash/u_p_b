@@ -1,3 +1,7 @@
+.appointment-right input[type=checkbox] {
+    display: inline-block !important;
+}
+
 /* Who We Are */
 .who-are-we {}
 
@@ -173,7 +177,7 @@
     }
 
     .whoAreWe-left {
-        margin-top: 70vw !important;
+        margin-top: 80vw !important;
     }
 
     .whoAreWe-left h1 {
@@ -358,7 +362,7 @@
     }
 
     .whoAreWe-left {
-        margin-top: 10vw !important;
+        margin-top: 2vw !important;
     }
 
     .whoAreWe-left h1 {
