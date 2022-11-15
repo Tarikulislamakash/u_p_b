@@ -65,10 +65,6 @@
 			font-size: 18px;
 		}
 
-		.menu>li {
-			margin-left: 1.4rem;
-		}
-
 		.menu li:hover {
 			transition: 0.3s ease;
 		}
@@ -88,6 +84,8 @@
 			border-radius: 8px;
 			top: 2rem;
 			width: 10rem;
+            padding-top: 1rem !important;
+            padding-bottom: 1rem !important;
 		}
 
 		.dropdown li {
@@ -160,7 +158,7 @@
 				padding: 16px 20px;
 				top: 100% !important;
 				border-top: 1px solid #777;
-				height: 65vh !important;
+				height: 30rem !important;
 			}
 
 			.menu li:hover {

@@ -3,6 +3,9 @@ body {
 }
 
 /* Header */
+.menu>li {
+    margin-left: 1.4rem;
+}
 /* Header */
 
 
@@ -299,6 +302,10 @@ body {
         width: 90% !important;
     }
 
+    .menu>li {
+        margin-left: 2rem;
+    }
+
     /* .navbar ul li {
         margin-left: 2rem !important;
     }
@@ -357,6 +364,10 @@ body {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 
+    .menu>li {
+        margin-left: 3rem;
+    }
+
     .navbar .logo {
         /* width: 32% !important; */
     }
@@ -398,6 +409,10 @@ body {
     .header ul li {
         margin-left: 5rem !important;
     } */
+
+    .menu>li {
+        margin-left: 4rem;
+    }
 
     .navbar .logo img {
         width: 60% !important;
