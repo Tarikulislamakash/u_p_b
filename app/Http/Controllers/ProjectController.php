@@ -9,6 +9,8 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 use App\Models\Appointment as AppointmentRequest;
+use Illuminate\Support\Facades\Validator;
+
 
 
 class ProjectController extends Controller
@@ -108,14 +110,33 @@ class ProjectController extends Controller
 
         if (str_word_count($request->name) < 2)
         {
-            return redirect()->back()->with('word_count_err', "Name can't be single word.");
+            // return redirect()->to('/link address'.'/#contact')
+            // return redirect(route('name').'/#contact')
+            return redirect(url()->previous().'#book-appointment')->with('word_count_err', "Name can't be single word.")->withInput();
+            // return redirect()->back()->with('word_count_err', "Name can't be single word.");
         }
 
-        $validated = $request->validate([
+
+
+        $validator = Validator::make($request->all(), [
             'email' => 'required|email:rfc',
             'name' => 'required',
-            'number' => 'required|integer|max:10|min:3',
+            'number' => 'required|max:10|min:3',
         ]);
+
+        if ($validator->fails()) {
+            return redirect(url()->previous().'#book-appointment')
+                        ->withErrors($validator)
+                        ->withInput();
+        }
+
+
+
+        // $validated = $request->validate([
+        //     'email' => 'required|email:rfc',
+        //     'name' => 'required',
+        //     'number' => 'required|max:10|min:3',
+        // ]);
 
         $name = $request->name;
         $email = $request->email;
