@@ -92,6 +92,7 @@ class ProjectController extends Controller
         $validator = Validator::make($request->all(), [
             'email' => 'required|email:rfc',
             'name' => 'required',
+            'number' => 'required|integer',
         ]);
 
         if ($validator->fails()) {
