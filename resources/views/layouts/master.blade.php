@@ -82,7 +82,7 @@
 			position: absolute;
 			display: none;
 			border-radius: 8px;
-			top: 2rem;
+			top: 1.6rem;
 			width: 10rem;
             padding-top: 1rem !important;
             padding-bottom: 1rem !important;
