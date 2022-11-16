@@ -175,7 +175,7 @@
     }
 
     .service-we-offer-right {
-        height: 35rem !important;
+        height: 40rem !important;
         margin-top: 3rem !important;
     }
 
@@ -184,7 +184,7 @@
     }
 
     .offer-form {
-        top: 13rem !important;
+        top: 15rem !important;
         width: 15rem !important;
     }
 
@@ -297,12 +297,14 @@
     }
 
     .service-we-offer-right {
-        height: 35rem !important;
+        /* height: 35rem !important; */
         margin-top: 0rem !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
     }
 
     .offer-form {
-        width: 15rem !important;
+        /* width: 15rem !important; */
     }
 
     /* Service We Offer */
@@ -341,8 +343,8 @@
     }
 
     .offer-form {
-        top: 13rem !important;
-        width: 15rem !important;
+        /* top: 13rem !important; */
+        /* width: 15rem !important; */
     }
 
     .service-we-offer-right .form-control {
@@ -383,12 +385,12 @@
     }
 
     .service-we-offer-right {
-        height: 40rem !important;
+        /* height: 40rem !important; */
     }
 
     .offer-form {
-        top: 16rem !important;
-        width: 15rem !important;
+        /* top: 16rem !important; */
+        /* width: 15rem !important; */
     }
 
 }

@@ -35,11 +35,37 @@ class RegisteredUserController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
+        if (str_word_count($request->name) < 2) {
+            return redirect(url()->previous() . '#register')->with('word_count_err', "Name can't be single word.")->withInput();
+        }
+
+
+
+        if (strlen($request->number) > 10) {
+            return redirect(url()->previous() . '#register')->with('number_range', "Number can't be more than 10 digits.")->withInput();
+        }
+
+
+        $validator = Validator::make($request->all(), [
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', Rules\Password::defaults()],
+            'number' => 'required|integer',
         ]);
+
+        if ($validator->fails()) {
+            return redirect(url()->previous() . '#register')
+                ->withErrors($validator)
+                ->withInput();
+        }
+
+
+        // $request->validate([
+        //     'name' => ['required', 'string', 'max:255'],
+        //     'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+        //     'password' => ['required', Rules\Password::defaults()],
+        //     'number' => 'required|integer',
+        // ]);
 
         $user = User::create([
             'name' => $request->name,
@@ -61,7 +87,6 @@ class RegisteredUserController extends Controller
 
         // Mailchimp Api Intigration
         $auth_user = User::where('email', auth()->user()->email)->first();
-        // dd($auth_user->address);
         $auth_user_name = $auth_user->name;
         $auth_user_number = $auth_user->phone;
         $auth_user_address = $auth_user->address;

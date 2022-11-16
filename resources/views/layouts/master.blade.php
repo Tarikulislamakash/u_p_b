@@ -76,7 +76,8 @@
 			align-items: center;
 			justify-content: space-between;
 			list-style: none;
-			padding: 0 14px;
+			padding: 0 20px;
+            padding-left: 0px;
 		}
 
 		nav .navbar .links li a {
@@ -124,7 +125,7 @@
 		}
 
 		.navbar .links li .sub-menu li {
-			padding: 0 22px;
+			/* padding: 0 22px; */
 			border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 		}
 
@@ -370,6 +371,37 @@
 				max-width: 100%;
 			}
 		}
+
+        @media only screen and (min-width: 992px) {
+
+            nav .navbar .links li {
+                padding: 0 26px;
+                padding-left: 0px;
+            }
+
+            .navbar .links li .sub-menu a {
+                padding-left: 22px;
+                padding-right: 22px;
+                padding-top: 6px;
+                padding-bottom: 6px;
+            }
+        }
+
+        @media only screen and (min-width: 1200px) {
+
+            nav .navbar .links li {
+                padding: 0 40px;
+                padding-left: 0px;
+            }
+        }
+
+        @media only screen and (min-width: 1200px) {
+
+            nav .navbar .links li {
+                padding: 0 50px;
+                padding-left: 0px;
+            }
+        }
 	</style>
 	<!-- ======================================== -->
 
@@ -382,53 +414,6 @@
 
 <body>
 
-	<!-- <div class="container">
-		<nav class="navbar">
-
-			<div class="logo">
-				<a href="{{ route('home') }}">
-					<img src="asset/Group 21821.png" alt="" />
-				</a>
-			</div>
-
-			<ul class="nav-links">
-				<input type="checkbox" id="checkbox_toggle" />
-				<label for="checkbox_toggle" class="hamburger">&#9776;</label>
-				<div class="menu">
-					<li><a href="{{ route('home') }}">Home</a></li>
-					<li><a href="{{ route('about') }}">About</a></li>
-					<li class="services">
-						<a href="#">
-							Service
-							<i class="fa fa-angle-down"></i>
-						</a>
-						<ul class="dropdown">
-							<li><a href="{{ route('bookkeeping') }}">Book Keeping</a></li>
-							<li><a href="{{ route('cis') }}">CIS</a></li>
-							<li><a href="{{ route('self') }}">Self</a></li>
-							<li><a href="{{ route('utr') }}">UTR</a></li>
-							<li><a href="{{ route('vat-filing') }}">Vat Filing</a></li>
-						</ul>
-					</li>
-					<li><a href="{{ route('contact') }}">Contact Us</a></li>
-					@if( !auth()->user() )
-					<li><a href="{{ route('login') }}">Login</a></li>
-					@else
-					<li>
-						<form method="POST" action="{{ route('logout') }}">
-							@csrf
-
-							<button style="border: none !important; background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;" type="submit">Logout</button>
-						</form>
-					</li>
-					@endif
-				</div>
-			</ul>
-		</nav>
-	</div> -->
-
-
-	<!-- ========================================================= -->
 	<div class="container">
 		<nav>
 			<div class="navbar">
@@ -481,7 +466,6 @@
 			</div>
 		</nav>
 	</div>
-	<!-- ========================================================= -->
 
 
 

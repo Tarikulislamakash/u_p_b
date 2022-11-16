@@ -10,7 +10,8 @@ use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 use App\Models\Appointment as AppointmentRequest;
 use Illuminate\Support\Facades\Validator;
-
+use Newsletter;
+use Illuminate\Support\Facades\URL;
 
 
 class ProjectController extends Controller
@@ -106,13 +107,24 @@ class ProjectController extends Controller
         $email = $request->email;
         $number = $request->number;
 
+        // ====================================================
+
+        // ====================================================
+
+
         AppointmentRequest::create([
             'name' => $name,
             'email' => $email,
             'number' => $number,
+            'request_page' => URL::previous()
         ]);
 
         Mail::to('tarikulislamakash@gmail.com')->send(new Appointment($name, $email, $number));
+
+        if (!Newsletter::isSubscribed($email)) {
+            Newsletter::subscribe($email, ['NAME' => $name, 'NUMBER' => $number]);
+        }
+
         return redirect()->back()->with('appointment_success', 'Appointment Request Successfully Send.');
     }
 

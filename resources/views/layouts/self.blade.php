@@ -19,6 +19,11 @@
 	<div class="container">
 		<div class="row d-flex">
 			<div class="col-md-5 self-left">
+                <!-- Appointment Session Message -->
+                @if(Session::has('appointment_success'))
+                <p class="alert alert-info" style="font-size: 100% !important; margin-bottom: 1rem !important;">{{ Session::get('appointment_success') }}</p>
+                @endif
+                <!-- Appointment Session Message -->
 				<h1 class="pb-2">Self Assessment</h1>
 				<p>
 					A self assessment is an individual review performed
@@ -38,9 +43,26 @@
 <!-- CIS Return -->
 
 <!-- Service We Offer -->
-<div class="service-we-offer">
+<div class="service-we-offer" id="book-appointment">
 	<div class="container">
 		<h1 class="text-center">Best self assessment services in UK</h1>
+        {{-- Validation Error --}}
+        @if ($errors->any())
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
+        @if (Session::has('word_count_err'))
+            <div class="alert alert-danger mt-2">{{ Session::get('word_count_err') }}</div>
+        @endif
+        @if (Session::has('number_range'))
+            <div class="alert alert-danger mt-2">{{ Session::get('number_range') }}</div>
+        @endif
+        {{-- Validation Error --}}
 		<div class="row">
 			<div class="col-md-7 service-we-offer-left">
 				<ul class="list-group">
@@ -59,29 +81,33 @@
 			<div class="col-md-5 service-we-offer-right d-flex justify-content-center">
 				<img class="img-fluid" src="asset/Group 21992@2x.png" alt="" />
 				<div class="offer-form">
-					{{-- <form action=""> --}}
-						<h3 class="text-center">Get Your Quote</h3>
-						<form method="POST" action="{{ route('appointment') }}">
-                            @csrf
-							<div class="mb-3">
-								<label for="name" class="form-label">Name</label>
-								<input type="text" class="form-control" id="name" name="name" aria-describedby="nameHelp" required/>
-							</div>
-							<div class="mb-3">
-								<label for="email" class="form-label">Email</label>
-								<input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" required/>
-							</div>
-							<div class="mb-3">
-								<label for="number" class="form-label">Number</label>
-								<input type="text" class="form-control" id="number" name="number" aria-describedby="numberHelp" required/>
-							</div>
-							<div class="d-flex justify-content-center mt-4">
-								<button type="submit" class="btn btn-primary fw-bold">
-									Submit Now
-								</button>
-							</div>
-						</form>
-					{{-- </form> --}}
+                    <h3 class="text-center">Get Your Quote</h3>
+                    <form method="POST" action="{{ route('appointment') }}">
+                        @csrf
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" aria-describedby="nameHelp" value="{{ old('name') }}" required/>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" value="{{ old('email') }}" required/>
+                        </div>
+                        <div class="mb-3">
+                            <label for="number" class="form-label">Number</label>
+                            <input type="text" class="form-control" id="number" name="number" aria-describedby="numberHelp" value="{{ old('number') }}" required/>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="agreeTerms" name="agreeTerms" required>
+                            <label class="form-check-label" for="agreeTerms">
+                                I Agree Terms & Coditions
+                            </label>
+                        </div>
+                        <div class="d-flex justify-content-center mt-4">
+                            <button type="submit" class="btn btn-primary fw-bold">
+                                Submit Now
+                            </button>
+                        </div>
+                    </form>
 				</div>
 			</div>
 		</div>

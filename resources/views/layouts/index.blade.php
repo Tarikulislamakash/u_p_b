@@ -25,9 +25,6 @@
                 @if(Session::has('appointment_success'))
                 <p class="alert alert-info" style="font-size: 100% !important; margin-bottom: 1rem !important;">{{ Session::get('appointment_success') }}</p>
                 @endif
-                @if(Session::has('appointment_error'))
-                <p class="alert alert-danger" style="font-size: 100% !important; margin-bottom: 1rem !important;">{{ Session::get('appointment_error') }}</p>
-                @endif
                 <!-- Appointment Session Message -->
 
                 <h1>who are we?</h1>
@@ -171,8 +168,8 @@
                         @error('name')
                         <div class="alert alert-danger mt-2">{{ $message }}</div>
                         @enderror
-                        @if (session::has('word_count_err'))
-                        <div class="alert alert-danger mt-2">{{ session::get('word_count_err') }}</div>
+                        @if (Session::has('word_count_err'))
+                        <div class="alert alert-danger mt-2">{{ Session::get('word_count_err') }}</div>
                         @endif
                     </div>
                     <div class="mb-3">
@@ -188,8 +185,8 @@
                         @error('number')
                         <div class="alert alert-danger mt-2">{{ $message }}</div>
                         @enderror
-                        @if (session::has('number_range'))
-                        <div class="alert alert-danger mt-2">{{ session::get('number_range') }}</div>
+                        @if (Session::has('number_range'))
+                        <div class="alert alert-danger mt-2">{{ Session::get('number_range') }}</div>
                         @endif
                     </div>
                     <div class="mb-3">

@@ -86,6 +86,11 @@ body {
     border-right: 0px !important;
 }
 
+.alert-danger ul{
+    margin-bottom: 0 !important;
+    list-style: none !important;
+}
+
 /* Footer */
 
 
@@ -439,7 +444,6 @@ body {
 
 
 
-
 @media only screen and (max-width: 767px) {
     .navbar .logo img {
         left: 50%;
@@ -453,3 +457,29 @@ body {
         transform: translate(-25vw);
     }
 }
+
+
+
+/* Navbar Font Size */
+
+@media only screen and (min-width: 500px) {
+
+    .navbar .nav-links li a{
+        font-size: 1.1rem !important;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+    .navbar .nav-links li a{
+        font-size: 1.3rem !important;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+
+    .navbar .nav-links li a{
+        font-size: 1.4rem !important;
+    }
+}
+
