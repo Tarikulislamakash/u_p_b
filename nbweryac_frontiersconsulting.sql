@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Nov 15, 2022 at 12:54 AM
+-- Generation Time: Nov 16, 2022 at 06:47 AM
 -- Server version: 10.3.36-MariaDB-cll-lve
 -- PHP Version: 7.4.30
 
@@ -33,6 +33,7 @@ CREATE TABLE `appointments` (
   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `number` bigint(50) NOT NULL,
+  `request_page` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -41,11 +42,12 @@ CREATE TABLE `appointments` (
 -- Dumping data for table `appointments`
 --
 
-INSERT INTO `appointments` (`id`, `name`, `email`, `number`, `created_at`, `updated_at`) VALUES
-(3, 'charan', 'charan@frontiersconsulting.com', 9959039045, '2022-11-11 20:38:43', '2022-11-11 20:38:43'),
-(4, 'charan', 'charan@frontiersconsulting.com', 9959039045, '2022-11-11 20:42:07', '2022-11-11 20:42:07'),
-(5, 'charan', 'charan@frontiersconsulting.com', 9959039045, '2022-11-11 20:42:46', '2022-11-11 20:42:46'),
-(6, 'charan', 'charan@frontiersconsulting.com', 9959039045, '2022-11-11 20:43:40', '2022-11-11 20:43:40');
+INSERT INTO `appointments` (`id`, `name`, `email`, `number`, `request_page`, `created_at`, `updated_at`) VALUES
+(3, 'charan', 'charan@frontiersconsulting.com', 9959039045, '', '2022-11-11 20:38:43', '2022-11-11 20:38:43'),
+(4, 'charan', 'charan@frontiersconsulting.com', 9959039045, '', '2022-11-11 20:42:07', '2022-11-11 20:42:07'),
+(5, 'charan', 'charan@frontiersconsulting.com', 9959039045, '', '2022-11-11 20:42:46', '2022-11-11 20:42:46'),
+(6, 'charan', 'charan@frontiersconsulting.com', 9959039045, '', '2022-11-11 20:43:40', '2022-11-11 20:43:40'),
+(7, 'Samin Yeaser Rahman', 'samin@gmail.com', 0, '', '2022-11-15 11:54:41', '2022-11-15 11:54:41');
 
 -- --------------------------------------------------------
 
@@ -194,7 +196,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `appointments`
 --
 ALTER TABLE `appointments`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `failed_jobs`

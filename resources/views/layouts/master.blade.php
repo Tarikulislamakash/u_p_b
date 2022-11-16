@@ -133,6 +133,7 @@
 			color: #fff;
 			font-size: 15px;
 			font-weight: 500;
+            padding: 0 22px;
 		}
 
 		.navbar .links li .sub-menu .more-arrow {
