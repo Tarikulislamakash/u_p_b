@@ -174,7 +174,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" value="{{ old('email') }}" required />
+                        <input type="text" class="form-control" name="email" id="email" aria-describedby="emailHelp" value="{{ old('email') }}" required />
                         @error('email')
                         <div class="alert alert-danger mt-2">{{ $message }}</div>
                         @enderror

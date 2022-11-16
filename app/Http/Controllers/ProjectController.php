@@ -84,22 +84,27 @@ class ProjectController extends Controller
         }
 
 
-        if (strlen($request->number) > 10) {
-            return redirect(url()->previous() . '#book-appointment')->with('number_range', "Number can't be more than 10 digits.")->withInput();
-        }
+        $validator = Validator::make(
+            $request->all(),
+            [
+                'email' => 'email:rfc,dns',
+            ]
+        );
 
-
-
-        $validator = Validator::make($request->all(), [
-            'email' => 'required|email:rfc',
-            'name' => 'required',
-            'number' => 'required|integer',
-        ]);
 
         if ($validator->fails()) {
             return redirect(url()->previous() . '#book-appointment')
                 ->withErrors($validator)
                 ->withInput();
+        }
+
+
+        if (strlen($request->number) != 10) {
+            return redirect(url()->previous() . '#book-appointment')->with('number_range', "Phone Number is not valid.")->withInput();
+        }
+
+        if (!preg_match('|^[0-9]+$|', $request->number)) {
+            return redirect(url()->previous() . '#book-appointment')->with('number_range', "Phone Number is not valid.")->withInput();
         }
 
 
