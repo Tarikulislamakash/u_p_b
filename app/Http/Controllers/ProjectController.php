@@ -112,10 +112,6 @@ class ProjectController extends Controller
         $email = $request->email;
         $number = $request->number;
 
-        // ====================================================
-
-        // ====================================================
-
 
         AppointmentRequest::create([
             'name' => $name,
