@@ -107,7 +107,7 @@
 					</div>
 					<div class="mb-3">
 						<label for="message" class="form-label">Message</label>
-						<textarea class="form-control" name="message" id="message" rows="3" value="{{ old('message') }}" required></textarea>
+						<textarea class="form-control" name="message" id="message" rows="3" value="" required>{{ old('message') }}</textarea>
 					</div>
 					<div class="form-check">
 						<input class="form-check-input" type="checkbox" value="" id="agreeTerms" name="agreeTerms" required>
