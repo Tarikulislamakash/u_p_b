@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules;
 use Newsletter;
+use Illuminate\Support\Facades\Validator;
 
 
 class RegisteredUserController extends Controller
@@ -40,17 +41,9 @@ class RegisteredUserController extends Controller
         }
 
 
-
-        if (strlen($request->number) > 10) {
-            return redirect(url()->previous() . '#register')->with('number_range', "Number can't be more than 10 digits.")->withInput();
-        }
-
-
         $validator = Validator::make($request->all(), [
-            'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'password' => ['required', Rules\Password::defaults()],
-            'number' => 'required|integer',
+            // 'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'email' => 'email:rfc,dns|unique:users',
         ]);
 
         if ($validator->fails()) {
@@ -60,12 +53,13 @@ class RegisteredUserController extends Controller
         }
 
 
-        // $request->validate([
-        //     'name' => ['required', 'string', 'max:255'],
-        //     'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-        //     'password' => ['required', Rules\Password::defaults()],
-        //     'number' => 'required|integer',
-        // ]);
+        if (strlen($request->number) != 10) {
+            return redirect(url()->previous() . '#register')->with('number_range', "Phone Number is not valid.")->withInput();
+        }
+
+        if (!preg_match('|^[0-9]+$|', $request->number)) {
+            return redirect(url()->previous() . '#register')->with('number_range', "Phone Number is not valid.")->withInput();
+        }
 
         $user = User::create([
             'name' => $request->name,

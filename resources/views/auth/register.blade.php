@@ -42,7 +42,7 @@
 						</div>
 						<div class="col-md-12">
 							<label for="email" class="form-label">Email</label>
-							<input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" value="{{ old('email') }}" required />
+							<input type="text" class="form-control" name="email" id="email" aria-describedby="emailHelp" value="{{ old('email') }}" required />
                             @error('email')
                                 <div class="alert alert-danger mt-2">{{ $message }}</div>
                             @enderror
@@ -63,7 +63,7 @@
 						</div>
 						<div class="col-md-12">
 							<label for="address" class="form-label">Address</label>
-							<textarea class="form-control" name="address" id="address" cols="30" rows="3" required></textarea>
+							<textarea class="form-control" name="address" id="address" cols="30" rows="3" required>{{ old('address') }}</textarea>
 						</div>
 					</div>
 				</div>
