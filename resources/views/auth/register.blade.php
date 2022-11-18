@@ -80,10 +80,11 @@
 							</label>
 							<input type="text" class="form-control" id="typeOfWork" name="typeOfWork" aria-describedby="typeOfWorkHelp" value="{{ old('typeOfWork') }}" required />
 						</div>
+
 						<div class="col-md-12">
 							<label for="dateStart" class="form-label">Date started working self employed
 							</label>
-							<input type="text" class="form-control" id="dateStart" name="dateStart" aria-describedby="dateStartHelp" value="{{ old('dateStart') }}" required />
+							<input type="date" class="form-control" id="dateStart" name="dateStart" aria-describedby="dateStartHelp" value="{{ old('dateStart') }}" required />
 						</div>
 
 						<div class="col-md-12">
@@ -105,11 +106,13 @@
 
 						<div class="col-md-12">
 							<div class="row">
+
 								<div class="col-md-12">
 									<label for="birth" class="form-label">Date of Birth
 									</label>
-									<input type="text" class="form-control" id="birth" name="birth" aria-describedby="nameHelp" value="{{ old('birth') }}" required />
+									<input type="date" class="form-control" id="birth" name="birth" aria-describedby="nameHelp" value="{{ old('birth') }}" required />
 								</div>
+
 								<div class="col-md-12">
 									<label for="requiredCIS" class="form-label">Required CIS Registration
 									</label>
@@ -139,5 +142,13 @@
 	</div>
 </div>
 <!-- Register -->
+
+@endsection
+
+
+
+@section('scripts')
+
+
 
 @endsection

@@ -95,7 +95,6 @@
 		}
 
 		nav .navbar .links li .arrow {
-			/* background: red; */
 			height: 100%;
 			width: 22px;
 			line-height: 70px;
@@ -110,7 +109,6 @@
 			top: 70px;
 			left: 0;
 			line-height: 40px;
-			/* background: #3E8DA8; */
 			background: #93b8f5;
 			box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 			border-radius: 4px;
@@ -125,7 +123,6 @@
 		}
 
 		.navbar .links li .sub-menu li {
-			/* padding: 0 22px; */
 			border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 		}
 
@@ -141,7 +138,6 @@
 		}
 
 		.navbar .links li .htmlCss-more-sub-menu {
-			/* line-height: 40px; */
 		}
 
 		.navbar .links li .sub-menu .more-sub-menu {
@@ -272,6 +268,10 @@
 				z-index: 1000;
 			}
 
+            nav .navbar .links li .sub-menu {
+			background: #3E8DA8;
+		}
+
 			.navbar .nav-links .sidebar-logo {
 				display: flex;
 				align-items: center;
@@ -373,6 +373,21 @@
 			}
 		}
 
+        @media only screen and (min-width: 768px) {
+
+            nav .navbar .links li {
+                padding: 0 .8rem;
+                padding-left: 0px;
+            }
+
+            .navbar .links li .sub-menu a {
+                padding-left: 22px;
+                padding-right: 22px;
+                padding-top: 6px;
+                padding-bottom: 6px;
+            }
+        }
+
         @media only screen and (min-width: 992px) {
 
             nav .navbar .links li {
@@ -391,7 +406,7 @@
         @media only screen and (min-width: 1200px) {
 
             nav .navbar .links li {
-                padding: 0 40px;
+                padding: 0 35px;
                 padding-left: 0px;
             }
         }
@@ -399,7 +414,7 @@
         @media only screen and (min-width: 1200px) {
 
             nav .navbar .links li {
-                padding: 0 50px;
+                padding: 0 42px;
                 padding-left: 0px;
             }
         }
@@ -452,7 +467,7 @@
 							<form method="POST" action="{{ route('logout') }}">
 								@csrf
 
-								<button style="border: none !important; background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;" type="submit">Logout</button>
+								<button style="border: none !important; background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;" type="submit" class="logout">Logout</button>
 							</form>
 						</li>
 						@endif
@@ -522,42 +537,6 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
 	<!-- Bootstrap JS CDN -->
 
-	<!-- <script>
-		document.addEventListener("DOMContentLoaded", function() {
-			if (window.innerWidth > 992) {
-				document
-					.querySelectorAll(".navbar .nav-item")
-					.forEach(function(everyitem) {
-						everyitem.addEventListener(
-							"mouseover",
-							function(e) {
-								let el_link =
-									this.querySelector("a[data-bs-toggle]");
-
-								if (el_link != null) {
-									let nextEl = el_link.nextElementSibling;
-									el_link.classList.add("show");
-									nextEl.classList.add("show");
-								}
-							}
-						);
-						everyitem.addEventListener(
-							"mouseleave",
-							function(e) {
-								let el_link =
-									this.querySelector("a[data-bs-toggle]");
-
-								if (el_link != null) {
-									let nextEl = el_link.nextElementSibling;
-									el_link.classList.remove("show");
-									nextEl.classList.remove("show");
-								}
-							}
-						);
-					});
-			}
-		});
-	</script> -->
 
 	<script>
 		// search-box open close js code

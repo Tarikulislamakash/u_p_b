@@ -2,9 +2,14 @@ body {
     min-height: 100vh;
 }
 
+.navbar .nav-links li .logout{
+    color: #fff !important;
+    padding-left: 0px !important;
+    font-weight: 500 !important;
+}
 /* Header */
 .menu>li {
-    margin-left: 1.4rem;
+    /* margin-left: 1.4rem; */
 }
 
 /* Header */
@@ -308,8 +313,8 @@ body {
         width: 90% !important;
     }
 
-    .menu>li {
-        margin-left: 2rem;
+    .nav-links ul>li {
+        /* margin-left: 2rem; */
     }
 
     /* .navbar ul li {
@@ -370,8 +375,8 @@ body {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 
-    .menu>li {
-        margin-left: 3rem;
+    .nav-links ul>li {
+        /* margin-left: 3rem; */
     }
 
     .navbar .logo {
@@ -416,8 +421,8 @@ body {
         margin-left: 5rem !important;
     } */
 
-    .menu>li {
-        margin-left: 4rem;
+    .nav-links ul>li {
+        /* margin-left: 4rem; */
     }
 
     .navbar .logo img {
@@ -464,21 +469,24 @@ body {
 
 @media only screen and (min-width: 500px) {
 
-    .navbar .nav-links li a{
+    .navbar .nav-links li a,
+    .navbar .nav-links li .logout{
         font-size: 1.1rem !important;
     }
 }
 
 @media only screen and (min-width: 992px) {
 
-    .navbar .nav-links li a{
+    .navbar .nav-links li a,
+    .navbar .nav-links li .logout{
         font-size: 1.3rem !important;
     }
 }
 
 @media only screen and (min-width: 1500px) {
 
-    .navbar .nav-links li a{
+    .navbar .nav-links li a,
+    .navbar .nav-links li .logout{
         font-size: 1.4rem !important;
     }
 }
