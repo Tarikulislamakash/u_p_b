@@ -109,29 +109,7 @@
 				<div class="offer-form">
 					<h4>Quick UTR Number Registration</h4>
 					<h4>Apply For UTR Number Now!</h4>
-					<a class="btn btn-info" href="{{ route('register') }}">Apply Now</a>
-					<!-- <form action="">
-						<h3 class="text-center">Get Your Quote</h3>
-						<form>
-							<div class="mb-3">
-								<label for="name" class="form-label">Name</label>
-								<input type="text" class="form-control" id="name" aria-describedby="nameHelp" />
-							</div>
-							<div class="mb-3">
-								<label for="email" class="form-label">Email</label>
-								<input type="email" class="form-control" id="email" aria-describedby="emailHelp" />
-							</div>
-							<div class="mb-3">
-								<label for="number" class="form-label">Number</label>
-								<input type="text" class="form-control" id="number" aria-describedby="numberHelp" />
-							</div>
-							<div class="d-flex justify-content-center mt-4">
-								<button type="submit" class="btn btn-primary fw-bold">
-									Submit Now
-								</button>
-							</div>
-						</form>
-					</form> -->
+					<a class="btn btn-info" href="{{ route('utr-register') }}">Apply Now</a>
 				</div>
 			</div>
 		</div>

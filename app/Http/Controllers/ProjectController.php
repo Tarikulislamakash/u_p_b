@@ -12,6 +12,7 @@ use App\Models\Appointment as AppointmentRequest;
 use Illuminate\Support\Facades\Validator;
 use Newsletter;
 use Illuminate\Support\Facades\URL;
+use App\Models\UtrRegistration;
 
 
 class ProjectController extends Controller
@@ -71,10 +72,82 @@ class ProjectController extends Controller
         return view('layouts.utr');
     }
 
+    public function utrRegister()
+    {
+        return view('layouts.utrRegister');
+    }
+
+
+
+    public function utrRegisterStore(Request $request)
+    {
+        if (str_word_count($request->name) < 2) {
+            return redirect(url()->previous() . '#register')->with('word_count_err', "Name can't be single word.")->withInput();
+        }
+        // dd($request->all());
+
+        $validator = Validator::make($request->all(), [
+            'email' => 'email:rfc,dns|unique:utr_registrations',
+        ]);
+
+        if ($validator->fails()) {
+            return redirect(url()->previous() . '#register')
+                ->withErrors($validator)
+                ->withInput();
+        }
+
+
+        if (strlen($request->number) != 10) {
+            return redirect(url()->previous() . '#register')->with('number_range', "Phone Number is not valid.")->withInput();
+        }
+
+        if (!preg_match('|^[0-9]+$|', $request->number)) {
+            return redirect(url()->previous() . '#register')->with('number_range', "Phone Number is not valid.")->withInput();
+        }
+
+        if( $request->requiredCISYes == null && $request->requiredCISNo == null )
+        {
+            return redirect(url()->previous() . '#register')->with('required_CIS', "Please Select One.")->withInput();
+        }
+
+        $user = UtrRegistration::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'phone' => $request->number,
+            'address' => $request->address,
+            'town' => $request->town,
+            'city' => $request->city,
+            'postal_code' => $request->postal_code,
+            'national_insurance' => $request->nationalInsurance,
+            'work_type' => $request->typeOfWork,
+            'start_work_date' => $request->dateStart,
+            'birth_date' => $request->birth,
+            'required_cis_registration' => $request->requiredCISYes ? $request->requiredCISYes : $request->requiredCISNo,
+        ]);
+
+        // Mailchimp Api Intigration
+        $email = $request->email;
+        $name = $request->name;
+        $number = $request->number;
+        $address = $request->address;
+
+        if (!Newsletter::isSubscribed($email)) {
+            Newsletter::subscribe($email, ['NAME' => $name, 'NUMBER' => $number, 'ADDRESS' => $address]);
+        }
+        // Mailchimp Api Intigration
+
+
+        return redirect()->back()->with('utr_registration', "UTR Number Registration SUccessfully Done.");
+    }
+
+
+
     public function vat_filing()
     {
         return view('layouts.vat-filing');
     }
+
+
 
     public function appointment(Request $request)
     {
@@ -128,6 +201,7 @@ class ProjectController extends Controller
 
         return redirect()->back()->with('appointment_success', 'Appointment Request Successfully Send.');
     }
+
 
 
     public function terms()

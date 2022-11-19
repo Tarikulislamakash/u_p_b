@@ -461,7 +461,8 @@
 						</li>
 						<li><a href="{{ route('contact') }}">Contact Us</a></li>
 						@if( !auth()->user() )
-						<li><a href="{{ route('login') }}">Login</a></li>
+                        {{-- <li><a class="btn btn-info" href="{{ route('register') }}">Register</a></li> --}}
+						{{-- <li><a href="{{ route('login') }}">Login</a></li> --}}
 						@else
 						<li>
 							<form method="POST" action="{{ route('logout') }}">
